@@ -1,0 +1,6 @@
+info:
+  name: r1
+  type: http
+http:
+  method: GET
+  url: ''
