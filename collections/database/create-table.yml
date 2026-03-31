@@ -1,0 +1,6 @@
+info:
+  name: create-table
+  type: http
+http:
+  method: POST
+  url: ''
