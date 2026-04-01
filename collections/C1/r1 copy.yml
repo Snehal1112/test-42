@@ -1,7 +1,0 @@
-uid: ''
-info:
-  name: r1 copy
-  type: http
-http:
-  method: GET
-  url: oooo
