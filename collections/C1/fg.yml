@@ -1,0 +1,17 @@
+uid: b5ce2994-c67d-43c1-a41d-28872c95a833
+info:
+  name: fg
+  type: http
+http:
+  method: PUT
+  url: https://reqbin.com/echo/:id?q1=sdd
+  headers:
+  - name: Cache-Control
+    value: must-revalidate
+  - name: Pragma
+    value: no-cache
+  - name: Expires
+    value: '0'
+  body:
+    type: json
+    data: ''

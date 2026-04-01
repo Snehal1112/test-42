@@ -1,6 +1,7 @@
+uid: d119707c-c887-4641-b20b-6cf89ee9aa58
 info:
   name: r1
   type: http
 http:
-  method: GET
+  method: PATCH
   url: ''
