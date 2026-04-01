@@ -1,0 +1,6 @@
+name: sddd
+variables:
+- key: '222'
+  value: '22'
+  enabled: true
+  secret: false
