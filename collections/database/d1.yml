@@ -1,0 +1,6 @@
+info:
+  name: d1
+  type: http
+http:
+  method: PUT
+  url: ''

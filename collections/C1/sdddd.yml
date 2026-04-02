@@ -1,0 +1,7 @@
+uid: 9175f3f2-a6d0-4aad-ac88-7d4f7727cd7a
+info:
+  name: sdddd
+  type: http
+http:
+  method: HEAD
+  url: sdddd

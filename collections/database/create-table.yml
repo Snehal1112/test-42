@@ -1,0 +1,7 @@
+uid: 4ac60c0d-79bf-4fdd-96b7-308260880d35
+info:
+  name: create-table
+  type: http
+http:
+  method: POST
+  url: '{{baseURL}}asasasas'
