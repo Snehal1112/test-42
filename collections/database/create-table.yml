@@ -4,4 +4,4 @@ info:
   type: http
 http:
   method: POST
-  url: '{{baseURL}}'
+  url: '{{baseURL}}asasasas'
