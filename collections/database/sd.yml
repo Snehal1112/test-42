@@ -1,0 +1,7 @@
+uid: 2f5b4fa7-2212-4a63-9059-44a7a690c12c
+info:
+  name: sd
+  type: http
+http:
+  method: GET
+  url: ''

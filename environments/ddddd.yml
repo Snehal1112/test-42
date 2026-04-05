@@ -1,6 +1,0 @@
-name: ddddd
-variables:
-- key: sdd
-  value: sd
-  enabled: true
-  secret: false
