@@ -1,0 +1,16 @@
+uid: 9318f6c0-918d-4342-8f8a-0b7252d5bbe7
+info:
+  name: Fetch Default Recipients
+  type: http
+  seq: 4
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v3/contacts/default_recipients/?company_id=ac06ae63-db46-4f1c-96f1-893ec0da26ae&include_contacts=true'
+  headers:
+  - name: app-code
+    value: sage_network
+  - name: X-Group-key
+    value: 7f6286eb-b4bf-49ff-b061-89e0d1b75264
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

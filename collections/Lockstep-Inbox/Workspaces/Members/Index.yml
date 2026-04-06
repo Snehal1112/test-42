@@ -1,0 +1,11 @@
+uid: 4fbd6b27-fd3a-45f6-9fcd-7bdc24291c60
+info:
+  name: Index
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/workspaces/{{workspace_id}}/members'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

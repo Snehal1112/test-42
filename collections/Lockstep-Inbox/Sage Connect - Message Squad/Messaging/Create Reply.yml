@@ -1,0 +1,18 @@
+uid: 6ac076c5-963e-49f4-a711-060db6a64403
+info:
+  name: Create Reply
+  type: http
+  seq: 7
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/activity_streams/cf4d91cd-134f-41ab-b12b-271a7062d3f3/activities'
+  body:
+    type: json
+    data: |-
+      {
+          "content": "HTML Content here"
+          // "attachments": [{ "id": 1 } , { "id": 2}]
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJVUXlRME0wTWtOQk5rUkJOVGxETXpaQ056VXhPVVUyUkRZNU5EbEJOVVF6T0VSQk1EQXdNQSJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8MDg5NWU3MWNkNmE2OTc2OTgxY2I5NTA3NWE2ZmRiMDBlMWU2NDNhNWY0N2M3ZDk2IiwiYXVkIjpbInNuZXQtZGV2L25ldHdvcmsvYXBpIiwiaHR0cHM6Ly9zYWdlLWNpZC1zaGFkb3cuc2FnZWlkbm9ucHJvZC5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzI3NzA1Nzc5LCJleHAiOjE3Mjc3MzQ1NzksInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJ1anozR05waWVpb3VCVjRuSjlmR1ZWcUF6SjdpWEtLcSJ9.1vPAMwC5ucq4fBAFvrnMFnNclGwX25vkSHN1FqMV5FlJ4YDxLuisNNAB1mm13HpbjNjd_bnWMvZRDwm-HiyA7U2IhgtfAFLflFKG4pbVWLSmw6kTUqUT0mdNCX14PeKqw7-kaKxlCQ8lGd23BH8ClxfW5iQ-dWqQwLo2fKuje6S6IEnDrV_4UAyViZ4mGW29tP40sbNSjHOoqOz4k2vJrJfNVQkRdnMTcazo6od6oBQz9BBQ6gFfZfZwNnqfStY21SAc5jI2dIFNlq8xS1ohdqKeopl4fZDElL4p3qRdgsZlFs3e_i7TXZtK5NPGulFl-Hgh8DAD1GeZQ_uQQUDYVA

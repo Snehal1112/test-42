@@ -1,0 +1,11 @@
+uid: 97fd1bb3-eca6-4b17-b4a9-fb770295537f
+info:
+  name: Resend Activity to AP Automation
+  type: http
+  seq: 17
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v2/workspaces/:workspace_id/activity_streams/8c8740d8-87cf-4e23-8989-1ec6252cfedb/activities/378994/resend'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

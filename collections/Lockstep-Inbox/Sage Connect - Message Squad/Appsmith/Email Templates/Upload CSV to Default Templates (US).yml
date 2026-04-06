@@ -1,0 +1,15 @@
+uid: eaab8706-0971-44ff-a708-3a6f8021f0d8
+info:
+  name: Upload CSV to Default Templates (US)
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/appsmith/v1/email_templates/upload'
+  body:
+    type: multipart-form
+    data: []
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

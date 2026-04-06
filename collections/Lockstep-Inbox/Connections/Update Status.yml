@@ -1,0 +1,25 @@
+uid: f8d33ac7-7888-4388-a7f0-0296e477bc31
+info:
+  name: Update Status
+  type: http
+  seq: 5
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/v2/connections/workspace_mappings/'
+  body:
+    type: json
+    data: |-
+      {
+          "connection_ids": [],
+          "status": "active",
+          "workspace_id": 188,
+          "select_all": true,
+          "qa": {
+              "app_enrollment_id_not_null": 1
+          },
+          "filter_status": "archived",
+          "company_type": "Customer"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJSUzI1NiIsImtpZCI6Ikc5MVJYYkhEODNkcHFNRWZkeTJ1Y2NXRDNKclptcG9zaVI2ZHRpN2JQTEkiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiIwMWNhZjg0NS1hNGEyLTQ2ZGYtYWVlZC1jYjY1YmVkNjk3MDAiLCJvaWQiOiIwMWNhZjg0NS1hNGEyLTQ2ZGYtYWVlZC1jYjY1YmVkNjk3MDAiLCJleHRlbnNpb25fZW1haWxWZXJpZmllZCI6dHJ1ZSwiZXh0ZW5zaW9uX2FjY291bnRFbmFibGVkIjp0cnVlLCJjdXJyZW50VXNlcklkZW50aXRpZXMiOltdLCJuYW1lIjoidW5rbm93biIsImV4dGVuc2lvbl9oYXNQYXNzd29yZCI6dHJ1ZSwiZXh0ZW5zaW9uX2hhc1Byb3Zpc2lvbmVkIjp0cnVlLCJlbWFpbHMiOlsicmphd2FoYXJAbG9ja3N0ZXAuaW8iXSwidGlkIjoiYTQ4ZmQwZjUtMzhhZC00MDZjLWE4YWUtZWMwMWVkMjVlZmNmIiwicGFzc3dvcmRFeHBpcmVkIjpmYWxzZSwibm9uY2UiOiJkZDZiOWM3YS1kOWRlLTRkZGEtOTY2OC04M2ViZmIyNWU5YTMiLCJzY3AiOiJhcGkuY2FsbCIsImF6cCI6IjA0OWYwZjVmLTQzZjUtNDRmNS05NDgwLTQ5YzM0OTQ2OWM4MyIsInZlciI6IjEuMCIsImlhdCI6MTY4Nzg4NjU0MiwiYXVkIjoiY2E0MmI4MzItNDExMi00ZjU0LWIzZWUtZWUxYWUwMTk1MmZmIiwiZXhwIjoxNjg3ODg3NDQyLCJpc3MiOiJodHRwczovL2xvZ2luLmRldi5sb2Nrc3RlcC5pby9hNDhmZDBmNS0zOGFkLTQwNmMtYThhZS1lYzAxZWQyNWVmY2YvdjIuMC8iLCJuYmYiOjE2ODc4ODY1NDJ9.GA6KJZ66gGnAIPGFAHagU1Y1SqeVdJnXLXdocRLcxhzhJcQz0ch8HCxGEtRitTvXkoKFYi-zmx2G0zOSEvYpZq1rb3LlRbfKwzH_ar8w9LymKHlm0A3FII3MWWGVf0DsFOrN0pPR5H46RVDI5MSMNo8xqovrO4U-nkx_TDQR6AIlPSFVmLeb0oOE3iK-hshLBEiz2lpjQT8IMpw0IpS29meAn33ls4D5cu2HUlxQWjapqwvrSHZTxxsQ1r6My3FFtWKNcfTTAHAg26CShm7q3rDypcOsnsCARMHYJveJatNL3d9VZJf25JBRnBJI6Jt7wWSzdKK-E-X5ETUgNHeX7Q

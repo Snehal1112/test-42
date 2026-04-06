@@ -1,0 +1,20 @@
+uid: 6dd256c8-0572-42e1-8b23-103690e23ddf
+info:
+  name: Create
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/portal_user_locale'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  body:
+    type: json
+    data: |-
+      {
+          "value": "en-US"
+      }
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

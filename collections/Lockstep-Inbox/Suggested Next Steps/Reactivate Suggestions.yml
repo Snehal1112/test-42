@@ -1,0 +1,21 @@
+uid: 25360056-4511-4dce-9d8e-89f0ae1ea34b
+info:
+  name: Reactivate Suggestions
+  type: http
+  seq: 2
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/v3/suggested_next_steps?company_id=3e2d74c0-cc25-4474-99a1-00bc4174ccf9'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  body:
+    type: json
+    data: |-
+      {
+          "suggested_next_step_id": 10,
+          "status": "active"
+      }
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

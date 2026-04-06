@@ -1,0 +1,15 @@
+uid: 840cae03-2b53-4605-8935-1776affd9029
+info:
+  name: Resend Magic Link
+  type: http
+  seq: 7
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/magic_links/resend'
+  body:
+    type: json
+    data: |-
+      {
+          "group_key": "2b46cb06-f140-4909-9b9a-35ba93ca7444",
+          "magic_link_id": "8b336d63-959f-4958-a05b-bd7141d0ed30"
+      }

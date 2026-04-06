@@ -1,0 +1,32 @@
+uid: 68a1e8c7-9840-48ad-9aa7-63c09b43b629
+info:
+  name: Create Dataset
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/network/v1/datasets/:network_account_id'
+  headers:
+  - name: X-Idempotency-Key
+    value: 75341100-a396-4b69-a484-e7a410ae2f31
+    disabled: true
+  body:
+    type: json
+    data: |-
+      {
+          // "idempotencyKey": "96af8d33-ffe7-4ab1-9812-4c7562bb19e5",
+          // "idempotencyKey": "7ae59da3-280d-4a5d-aa8a-8d5af1c66a47",
+          "idempotencyKey": "75341100-a396-4b69-a484-e7a410ae2f31",
+          "data": {
+              "type": "Dataset",
+              "attributes": {
+                  "name": "Dataset - FR - {{$randomCompanyName}}",
+                  "Country":"FR",
+                  "externalId": "{{$guid}}",
+                  "externalSource":"Sage Desktop"
+              }
+          }
+      }
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

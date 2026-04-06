@@ -1,0 +1,19 @@
+uid: a85808c4-0202-4889-be22-653318f5de1e
+info:
+  name: Enable Templates for Countries
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/appsmith/v1/email_templates/create_country_mappings'
+  body:
+    type: json
+    data: |-
+      {
+          "template_code": "INVOICE_NOTIFICATION_MULTIPLE",
+          "country_codes": ["US", "CA", "IE", "GB", "DE", "ES", "FR"]
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

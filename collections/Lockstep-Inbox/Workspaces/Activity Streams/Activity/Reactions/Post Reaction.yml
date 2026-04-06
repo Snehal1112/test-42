@@ -1,0 +1,11 @@
+uid: 222fc99e-5654-4251-858e-429feabb2fd4
+info:
+  name: Post Reaction
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v2/workspaces/3/activity_streams/b09a9eff-5cde-4087-899f-05d330305994/activities/23114/reactions/?account_id=2&user_id=2&reaction_type=1'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

@@ -1,0 +1,17 @@
+uid: 670d2ada-3168-45a1-b050-4cc274a5bcc9
+info:
+  name: Create Role
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/contacts/roles'
+  body:
+    type: json
+    data: |-
+      {
+          "label": "Account "
+      }
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

@@ -1,0 +1,11 @@
+uid: 343ebede-4ae3-4ce1-9891-c65e400b75a7
+info:
+  name: Index
+  type: http
+  seq: 10
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/workspaces'
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

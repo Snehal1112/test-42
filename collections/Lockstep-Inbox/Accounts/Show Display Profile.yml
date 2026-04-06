@@ -1,0 +1,14 @@
+uid: ab3687e9-c7a4-4b59-8f5e-3ae8f7e79569
+info:
+  name: Show Display Profile
+  type: http
+  seq: 2
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v3/accounts/profile'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

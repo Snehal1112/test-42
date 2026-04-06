@@ -1,0 +1,23 @@
+uid: 422205b1-48ff-497d-845a-8be5a5a4e16e
+info:
+  name: Connect bridge
+  type: http
+  seq: 5
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/payment_providers/connect'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  body:
+    type: json
+    data: |-
+      {
+        "servicer_id": "7537d358-25a0-4d3f-8cbf-6c8a06acbee9",
+        "landing_page_type": "login",
+        "success_redirect_uri": "https://example.com/everything-is-awesome",
+        "failure_redirect_uri": "https://example.com/oh-no"
+      }
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

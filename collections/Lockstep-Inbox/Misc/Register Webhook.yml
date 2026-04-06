@@ -1,0 +1,19 @@
+uid: 83f6a9ab-58e3-4471-90c2-77f8833c5a6d
+info:
+  name: Register Webhook
+  type: http
+  seq: 7
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v2/webhooks/register'
+  body:
+    type: json
+    data: |-
+      {
+        "of": "SyncRequest",
+        "on": ["update"],
+        "execute": "Platform::DataSyncJob"
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

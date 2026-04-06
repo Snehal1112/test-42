@@ -1,0 +1,22 @@
+uid: a46256d0-d975-4dd9-afe2-396831d219fa
+info:
+  name: Bulk Actions
+  type: http
+  seq: 9
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/v2/workspaces/1/activity_streams/status'
+  body:
+    type: json
+    data: |-
+      {
+          "activity_stream_ids": ["9ad4ee62-f7e6-42d4-9bcf-787701c113e0"],// "3027e7c4-c23c-4b73-8b0c-da361faecc11", "031bd400-c054-4b89-96b1-bbb9e84782a0
+          "status": "snoozed",
+          // "select_all": false
+          "snooze_until": 1666349326
+          // "assignee_id": 12,
+          // "note": "something shit"
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

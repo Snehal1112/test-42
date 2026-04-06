@@ -1,0 +1,35 @@
+uid: 015a587d-8d32-43ef-80d2-3d2d4d996ffe
+info:
+  name: Create Magic links
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: https://api-qa.network.sage.com/api/v1/useraccounts/magic-links/
+  headers:
+  - name: LS-InternalService
+    value: 681ac5e9b5df4ef39d240c1e44de87ab
+  - name: Content-Type
+    value: application/json
+  - name: Accept
+    value: application/json
+  - name: X-Group-Key
+    value: 9ea7e65b-8026-7ca5-5752-65ea3e3916ad
+  body:
+    type: json
+    data: |-
+      {
+        "email": "akshay.bhangale@sage.com",
+        "expiresInMinutes": "43200",
+        "applicationId": "00000000-0000-0000-0003-000000000003",
+        "userRole": "00000000-0000-0000-0000-000000000003",
+        "companyId": "38f36e05-dcc2-458e-a0c9-ff35bdbffda2",
+        "accounting_profile_id": null
+      }
+  auth:
+    type: bearer
+    token: ''
+runtime:
+  scripts:
+  - type: after-response
+    code: "let response = res.getBody()\nlet magicLinkId = response.magicLinkId \nconsole.log(magicLinkId, \"magicLinkId\")\nbru.setEnvVar(\"magicLinkId\", magicLinkId);"

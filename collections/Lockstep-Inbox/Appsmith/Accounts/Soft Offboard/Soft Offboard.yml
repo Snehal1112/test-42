@@ -1,0 +1,12 @@
+uid: c99954a5-b119-40e7-ab5a-0adeb67c1a7d
+info:
+  name: Soft Offboard
+  type: http
+  seq: 1
+http:
+  method: DELETE
+  url: '{{BASE_URL}}/api/appsmith/v1/soft_offboard/account/:dataset_id'
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

@@ -1,0 +1,11 @@
+uid: 0a2a13fd-0816-40da-9314-afecd589f59f
+info:
+  name: Invoices
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v3/invoices/?page_size=20'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

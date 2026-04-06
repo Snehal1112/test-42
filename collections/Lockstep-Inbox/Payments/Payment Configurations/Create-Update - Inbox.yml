@@ -1,0 +1,20 @@
+uid: e76e0f35-d8f9-4226-9f71-f32f96ca6b34
+info:
+  name: Create/Update - Inbox
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/payment_configs'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  body:
+    type: json
+    data: |-
+      {
+          "credit_adjustments_enabled": true
+      }
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

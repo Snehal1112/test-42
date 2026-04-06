@@ -1,0 +1,11 @@
+uid: 96881f31-f56b-4399-b144-6abf4d990c17
+info:
+  name: ServerRequest
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/attachments?filter_by=connection&connection_id=8e9c2229-eb9d-4031-a11e-b2613f2406b8&page=1&page_size=25&qa[m]=or&qa[message_id_null]=1&qs[s]=created_at%20desc&qa[file_name_cont_any]=mass'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

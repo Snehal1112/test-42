@@ -1,0 +1,24 @@
+uid: dccd7e02-760a-48ad-8c0c-24e0b2795383
+info:
+  name: Create Note
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/notes'
+  body:
+    type: json
+    data: |-
+      {
+        "company": {
+          "company_id": "f2c686a5-89a9-4ce0-9d24-25575896dac2"
+        },
+        "subject": "Welcome to your online statement from SNA 3 QBO!!",
+        "content": "HTML content",
+        "pendo_data": {},
+        "reference_id": "",
+        "reference_type": ""
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJVUXlRME0wTWtOQk5rUkJOVGxETXpaQ056VXhPVVUyUkRZNU5EbEJOVVF6T0VSQk1EQXdNQSJ9.eyJpc3MiOiJodHRwczovL2lkLXNoYWRvdy5zYWdlLmNvbS8iLCJzdWIiOiJhdXRoMHxkMTkyNzZmYjRhMjc0YjYwYzZmOGMyODRjNzkwOTExZTE1ZjFmMGY2NmZhZTQ2YmMiLCJhdWQiOlsic25ldC1kZXYvbmV0d29yay9hcGkiLCJodHRwczovL3NhZ2UtY2lkLXNoYWRvdy5zYWdlaWRub25wcm9kLmF1dGgwYXBwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE3MjExMjAxNDYsImV4cCI6MTcyMTE0ODk0Niwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsImF6cCI6InVTT21ZRFZUcVh6bWFZQmpubVBPZXpmaXJKbndZYlpvIn0.yH2G-YKXzjL2uyj0XTHOyiBhfFzEaqppxapbExL0f6d-Inbyh_iTgl9a22AbK6Rw9Uq1hRdzdlJw8P-TROBUmKVtB7XQ8WjOncQsIR7ZHjKyaGU_4B-P-NB5v3nWuXClSRSqKB6TMXuzi805yF7SW9kjHHtn7t0Ha9tkiK8QiGh21Tvpk-7DWoTvK_kKgag150hbryeeELRVlwKjT-hv6fZwITu8zPY3amMeM69hzoImLbGn36uAghVKk7xhiW2Jd4VunYOdnonlj3kuiAWwj2diE3RSizZv5M-d3DLWSz9rZfCcdrAOUA3umbM2JU2NiurKQ9KqEoDlDUcNtCXclQ

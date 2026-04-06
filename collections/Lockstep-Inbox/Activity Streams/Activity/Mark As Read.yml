@@ -1,0 +1,11 @@
+uid: 85d7132f-29fb-4993-ac6c-ba0b494ed412
+info:
+  name: Mark As Read
+  type: http
+  seq: 5
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/v2/workspaces/219/activity_streams/a0dea5cc-7168-4c19-b02c-182997e530cd/activities/mark_as_read'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

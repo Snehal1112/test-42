@@ -1,0 +1,49 @@
+uid: 9dc97ee3-10cd-4a31-bf8c-12ed3e7a169a
+info:
+  name: Create Message - Internal
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/ado/v1/activity_streams'
+  body:
+    type: json
+    data: |-
+      {
+          "company": {
+              "company_id": "6ed09b68-a5e0-4007-8bb7-0807e9315574",
+              "company_name": "Dermi Cool",
+              "email_address": "blk_email_test_all_env@sharklasers.com"
+          },
+          "to_addresses": [{
+              "email_address": "manish.bs@sage.com",
+              "name": "pan13",
+              "contact_id": "1720bb38-247e-4db6-9a55-9b41a23c6895"
+          }],
+          "subject": "Account Balance for Almighty Almonds - Test Reply 101",
+          "content": "<body><p class=\"editor-paragraph\" style=\"margin: 0px;\"><span style=\"white-space: normal;\">Hi,</span></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><br></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><span style=\"white-space: normal;\">I hope you're well! Please find your account balance below.</span></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><br></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><b style=\"white-space: normal;\"><strong class=\"editor-text-bold\" style=\"white-space: pre-wrap;\">Current Balance: $ 35,860.00</strong></b></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><br></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><span style=\"white-space: normal;\">We appreciate your continued business, please reach out if you have any questions. As always, you can access all of your invoices and records, here:</span></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><br></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><span style=\"white-space: normal;\"><a href=\"{{PortalLink}}\" style=\"border-radius: 0.5rem; display: inline-block; color: rgb(255, 255, 255); font-style: normal; font-weight: 500; font-size: 0.875rem; line-height: 1.25rem; text-align: center; text-transform: none; background: #007E45; padding: 0.625rem 0.75rem; margin-bottom: 0.325rem; -webkit-box-align: center; text-decoration: none;\"> Open Portal </a></span></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><span style=\"white-space: normal;\">This link expires in 30 days.</span></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><br></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><span style=\"white-space: normal;\">Thank you,</span><br><span style=\"white-space: normal;\">Manish Narayan B S</span><br><span style=\"white-space: normal;\">Joule Systems</span><br><span style=\"white-space: normal;\"><img src=\"https://app.eu.dev.lockstep.io/image-assets/5baebd38-3ea0-454a-9b30-ca44ae3fd671/00000000-0000-0000-0000-000000000000/Company/969ebe95-e328-4d0b-a27a-bc479bf407fb/company-logo/82e7d6d5-88d0-4538-b410-72b1c15cc22d.jpg\" style=\" width: 40px; height: 40px; border-radius: 4px; margin-right: 4px; margin-top: 4px; margin-bottom: 4px; \" alt=\"Unknown Company Logo\"></span></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><br></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><br></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><b style=\"white-space: normal;\"><strong class=\"editor-text-bold\" style=\"white-space: pre-wrap;\">This email was delivered through Sage Network on behalf of Joule Systems. Replies to this email will go directly to inboxtestingnew1003@outlook.com.</strong></b></p><br>,<hr style=\"margin-block: 8px; border: 0.5px solid #c9c9c9\">,<p style=\"font-size: 10px; font-weight: 400; line-height: 1.5; color: #757575\"> This email and associated links are intended solely for the recipient. If received in error, please notify us and delete this message. </p> </body>",
+          "from_address": {
+              "email_address": "qbo_sna_qa3@sharklasers.com",
+              "name": "SNA QBO QA 3"
+          },
+          "account": {
+              "company_id": "bd0aa001-c019-4f6f-b6b6-e3f95de1c207",
+              "group_key": "0a536064-0862-48b0-a992-b525b4af5eeb",
+              "company_name": "SNA QBO QA 3",
+              "email_address": "qbo_sna_qa3@sharklasers.com",
+              "workspace_id": 6
+          },
+          "attachments": [],// { "id": 8240 }, { "id": 8241 }
+          "account_id": 5,
+          "email_type": "outgoing"
+          // "transactions": [
+          //     {
+          //         "transaction_id": "6a248fe8-eec6-4e22-b8b3-7aec98f5b522",
+          //         "transaction_type": "invoice"
+          //     }
+          // ]
+      }
+  auth:
+    type: basic
+    username: '{{task_username}}'
+    password: '{{task_password}}'

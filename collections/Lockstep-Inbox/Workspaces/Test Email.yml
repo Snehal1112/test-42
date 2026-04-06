@@ -1,0 +1,19 @@
+uid: fc3233a6-9671-480f-a797-aec7fa2026c9
+info:
+  name: Test Email
+  type: http
+  seq: 15
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v2/workspaces/1/send_test_email/'
+  body:
+    type: json
+    data: |-
+      {
+          "to": ["dakshita.jain@lockstep.io"],
+          "subject": "DevTest email for templates 2",
+          "content": "<p>Hello Tiger Taming,</p><p><br></p><p>A summary of your invoice(s) has been provided below.</p><p><strong>Invoice Number</strong>: #DEMOI000000102</p><p><strong>Due Date </strong>: Nov 23, 2022</p><p><strong>Invoice Amount</strong>: $2,693.00</p><p><strong>Outstanding Amount</strong>: $0.00</p><br><p>If you have any questions, please reply to this email.</p><p>Thank you for your business!</p><p>&nbsp;{Magic Link Call to Action Button}&nbsp;</p><br><p>Sincerely,</p><p>APAC QA Company</p><p>ApacQA@lockstep.io</p><p></p>"
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

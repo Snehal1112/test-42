@@ -1,0 +1,21 @@
+uid: 5b12c875-5188-4812-8fbb-c63a22df6b4f
+info:
+  name: Update Default SNS
+  type: http
+  seq: 3
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/appsmith/v1/suggested_next_steps/update_metadata/:id'
+  body:
+    type: json
+    data: |-
+      {
+          "code": "FIX_MISSING_EMAIL_ADDRESS",
+          "is_recurring": true,
+          "is_active": true,
+          "parent_suggested_next_step_id": null
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

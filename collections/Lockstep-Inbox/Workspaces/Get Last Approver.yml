@@ -1,0 +1,11 @@
+uid: 1d57ccb2-d642-42f8-84f5-e160bc67ace8
+info:
+  name: Get Last Approver
+  type: http
+  seq: 16
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/workspaces/219/last_approver?connection_id=72ff9c49-d6e2-4f8f-b7c3-497d830f5e01'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

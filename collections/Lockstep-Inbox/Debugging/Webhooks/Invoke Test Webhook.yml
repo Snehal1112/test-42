@@ -1,0 +1,89 @@
+uid: d86daca7-d60d-4bdc-acf4-92f669b794e2
+info:
+  name: Invoke Test Webhook
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v2/webhooks/insertupdateTest::TestWebhooksJob/invoke'
+  headers:
+  - name: ls-webhook-client-key
+    value: 5LX8N0s34DaGJWeKr1bAMssj40Bn1BWlPP6jNOKNjgle2K3ALOZtxGRhrus5GTgbW4ut02mW8gVWCBl6G1pGRAbOq91OY7wd88SF
+  body:
+    type: json
+    data: |-
+      {
+          "WebhookId": "b711fe77-631e-4153-bcbb-6c4442f9f980",
+          "EventId": "8e96b49d-cdd2-4801-a986-82339bba1265",
+          "Event": "Company.Update",
+          "GroupKey": "a4429a01-e38e-448d-9fda-754f8f230b4e",
+          "Timestamp": "2023-05-10T16:04:53.550126+00:00",
+          "Data": [
+              {
+                  "Id": "f5ca6e53-8829-4dc9-a066-17c6ef6d34fc",
+                  "ResourceUrl": "https://api.dev.lockstep.io/api/v1/Companies/f5ca6e53-8829-4dc9-a066-17c6ef6d34fc",
+                  "Entity": {
+                      "CompanyId": "f5ca6e53-8829-4dc9-a066-17c6ef6d34fc",
+                      "CompanyName": "Test Old Webhook",
+                      "ErpKey": null,
+                      "CompanyType": "Vendor",
+                      "ParentCompanyId": null,
+                      "EnterpriseId": "00000000-0000-0000-0000-000000000000",
+                      "GroupKey": "a4429a01-e38e-448d-9fda-754f8f230b4e",
+                      "IsActive": true,
+                      "DefaultCurrencyCode": null,
+                      "CompanyLogoUrl": null,
+                      "PrimaryContactId": null,
+                      "Address1": null,
+                      "Address2": null,
+                      "Address3": null,
+                      "City": null,
+                      "StateRegion": null,
+                      "PostalCode": null,
+                      "Country": null,
+                      "TimeZone": null,
+                      "PhoneNumber": null,
+                      "FaxNumber": null,
+                      "Created": "2023-05-10T16:04:48.14",
+                      "CreatedUserId": "3dc23e2f-333a-4961-929e-3bce3ef1c9fe",
+                      "Modified": "2023-05-10T16:04:48.5649679Z",
+                      "ModifiedUserId": "3dc23e2f-333a-4961-929e-3bce3ef1c9fe",
+                      "TaxId": null,
+                      "DunsNumber": null,
+                      "ApEmailAddress": null,
+                      "ArEmailAddress": null,
+                      "ExternalReference": null,
+                      "DomainName": "sage.com",
+                      "CompanyClassificationCodeDefId": null,
+                      "Description": null,
+                      "Website": "sage.com",
+                      "AppEnrollmentId": null,
+                      "PreferredDeliveryMethod": null,
+                      "EmailAddress": null,
+                      "PublicUrlSlug": null,
+                      "StateTaxId": null,
+                      "StateOfIncorporation": null,
+                      "LinkedInUrlSlug": null,
+                      "IsVerified": false,
+                      "LastVerifiedDate": null,
+                      "LogoViewBoxMinX": null,
+                      "LogoViewBoxMinY": null,
+                      "LogoViewBoxWidth": null,
+                      "LogoViewBoxHeight": null,
+                      "ServiceFabricOrgId": null,
+                      "ServiceFabricCompanyId": null,
+                      "CompanyRegistrationNumber": null,
+                      "ProcessedDuringCurrentSync": false,
+                      "Notes": null,
+                      "Attachments": null,
+                      "CustomFieldValues": null,
+                      "Contacts": null,
+                      "Invoices": null
+                  }
+              }
+          ]
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

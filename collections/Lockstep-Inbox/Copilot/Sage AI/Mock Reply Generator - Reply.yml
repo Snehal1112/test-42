@@ -1,0 +1,16 @@
+uid: a01707e6-23c2-4af4-bcaf-383b452385ca
+info:
+  name: Mock Reply Generator - Reply
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/copilot/reply_generator/mock_reply'
+  body:
+    type: json
+    data: |-
+      {
+          "body": "Hi Kris, I hope this message finds you well. We have an outstanding Invoice with you. Could you share the Invoice copy of Invoice Number - 1004. This would help us. Regards, Manish,Cool Cars",
+          "date": "2023-07-24",
+          "subject": "Request for Invoice 1004"
+      }

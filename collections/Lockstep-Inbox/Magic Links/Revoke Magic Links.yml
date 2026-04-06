@@ -1,0 +1,14 @@
+uid: b1b03440-b44d-4ae6-8ac9-82764e9f3cd6
+info:
+  name: Revoke Magic Links
+  type: http
+  seq: 8
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/v3/magic_links/revoke/:company_id'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

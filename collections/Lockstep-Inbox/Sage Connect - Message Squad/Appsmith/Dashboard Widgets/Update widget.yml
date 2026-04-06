@@ -1,0 +1,20 @@
+uid: fb9d0e8c-02d7-4e8a-afb0-2a4c10e42d9b
+info:
+  name: Update widget
+  type: http
+  seq: 3
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/appsmith/v1/widgets/:id'
+  body:
+    type: json
+    data: |-
+      {
+          "code": "AGING_REPORTXY",
+          "active": false,
+          "draggable": false
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

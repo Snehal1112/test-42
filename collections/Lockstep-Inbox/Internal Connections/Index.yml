@@ -1,0 +1,11 @@
+uid: 8cabcef3-a471-4056-a8f5-f7780810b9db
+info:
+  name: Index
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/connections/internal_connections/?status=active&page=0&page_size=10&workspace_id=246'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

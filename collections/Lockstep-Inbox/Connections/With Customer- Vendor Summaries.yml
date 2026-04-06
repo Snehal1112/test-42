@@ -1,0 +1,11 @@
+uid: 61e3834a-d5db-43c8-9ca9-9be4167cd875
+info:
+  name: With Customer/ Vendor Summaries
+  type: http
+  seq: 9
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/connections/connection-summary?status=active&page=0&page_size=10&workspace_id=18&company_type=Customer&qs[s]=company_name&qa[amount_past_due_gt]=0&qa[dso_gteq]=0'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

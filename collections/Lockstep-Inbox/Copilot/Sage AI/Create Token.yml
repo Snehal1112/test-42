@@ -1,0 +1,21 @@
+uid: 53b7590c-a588-4f79-b080-4bedb80ee1c4
+info:
+  name: Create Token
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: https://id-shadow.sage.com/oauth/token
+  headers:
+  - name: X-Group-Key
+    value: 5baebd38-3ea0-454a-9b30-ca44ae3fd671
+    disabled: true
+  body:
+    type: json
+    data: |-
+      {
+        "grant_type": "client_credentials",
+        "client_id": "eNvI7G4x0JXW3Q74t8LXMur7lq7EsZdC",
+        "client_secret": "",
+        "audience": "network-platform/qa-accounting-data-services"
+      }

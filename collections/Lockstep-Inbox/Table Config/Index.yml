@@ -1,0 +1,14 @@
+uid: 937319f2-c18f-47a3-a5f1-d5021930bfc7
+info:
+  name: Index
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v3/table_configs?qa[screen_code_eq]=HOME&qa[table_name_eq]=invoices_table'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

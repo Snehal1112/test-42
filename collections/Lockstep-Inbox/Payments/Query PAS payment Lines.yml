@@ -1,0 +1,14 @@
+uid: 104fa4ef-80e4-4d49-bdfa-51b97c99addf
+info:
+  name: Query PAS payment Lines
+  type: http
+  seq: 9
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v3/payments/:payment_id/lines?page=0&page_size=10'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

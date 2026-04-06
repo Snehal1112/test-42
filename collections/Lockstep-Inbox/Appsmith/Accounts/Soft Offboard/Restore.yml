@@ -1,0 +1,12 @@
+uid: d9d99935-321b-4ab0-a8f0-9925e5f94e50
+info:
+  name: Restore
+  type: http
+  seq: 2
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/appsmith/v1/soft_offboard/account/:dataset_id/restore'
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

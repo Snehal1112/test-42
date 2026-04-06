@@ -1,0 +1,27 @@
+uid: 9978a3ba-8385-4505-818d-11d575184933
+info:
+  name: VendorConnectionActivityStream
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v2/workspaces/1/activity_streams/'
+  body:
+    type: json
+    data: |-
+      {
+          "activity_type": "email",
+          "attachments": [44],
+          "bcc": [],
+          "cc": [],
+          "content": "<p>Test attachment call</p>\n",
+          "content_type": "input_email",
+          "email_action": "new",
+          "primary_connection_id": "9d7a0d2e-e42c-40cf-aa71-d05cf0cd6b0a",
+          "subject": "Let's Test Attachment",
+          "to": ["test7878878@gmail.com"],
+          "workspace_id": 1
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

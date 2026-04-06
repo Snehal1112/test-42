@@ -1,0 +1,14 @@
+uid: 3aa531d1-e9ac-44d8-9f8e-2866adb36c10
+info:
+  name: Delete Connection
+  type: http
+  seq: 2
+http:
+  method: DELETE
+  url: '{{BASE_URL}}/api/v3/email_providers/:connection_id'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

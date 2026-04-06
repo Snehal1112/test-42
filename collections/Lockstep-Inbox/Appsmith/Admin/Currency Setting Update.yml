@@ -1,0 +1,12 @@
+uid: f7c25ab2-d1a5-4528-99a2-e1e3e0bfe8db
+info:
+  name: Currency Setting Update
+  type: http
+  seq: 2
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/appsmith/v1/admin/14/currency-settings'
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

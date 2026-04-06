@@ -1,0 +1,18 @@
+uid: 2cf318fc-d3c0-4d3b-9e52-0ed39d5682cf
+info:
+  name: Trigger Weekly Invite Summary
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/appsmith/v1/notifications/trigger_weekly_invite_summary'
+  body:
+    type: json
+    data: |-
+      {
+          "group_key": "544adfa3-977f-436a-b7b9-7a369e9ceca0"
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

@@ -1,0 +1,23 @@
+uid: 560ca845-236e-4df0-9794-ce52a8f14cda
+info:
+  name: Update Search Suggestion
+  type: http
+  seq: 1
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/appsmith/v1/search_suggestions'
+  body:
+    type: json
+    data: |-
+      {
+          "workspace_type": "accounts_receivable",
+          "category": "activity_streams",
+          "suggested_fields": {
+               "from": "any connection on Inbox",
+               "assigned_to": "anyone on your team"
+               }
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

@@ -1,0 +1,16 @@
+uid: eac9e8fc-a2fb-4034-8ca2-ce102a6d062e
+info:
+  name: Index
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v3/network_invitations?page_items=50&direct_users_only=true&page=1&filter=CancelledAt+eq+null+and+AcceptedAt+eq+null+and+DeclinedAt+eq+null&order=updated_at'
+  headers:
+  - name: X-Sxp-Authorization
+    value: '{{SXP_TOKEN}}'
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

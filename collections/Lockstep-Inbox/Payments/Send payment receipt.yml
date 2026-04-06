@@ -1,0 +1,14 @@
+uid: 2c744128-a5ef-4121-b959-ab6b9eefe637
+info:
+  name: Send payment receipt
+  type: http
+  seq: 10
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/payments/:payment_id/send_receipt'
+  headers:
+  - name: Group-Key
+    value: '{{GroupKey}}'
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

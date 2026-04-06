@@ -1,0 +1,11 @@
+uid: 919741e6-284f-4dc1-a266-23d73a12fe09
+info:
+  name: Summary
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/dashboards/1/summary'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

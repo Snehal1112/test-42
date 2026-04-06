@@ -1,0 +1,18 @@
+uid: 6421c8d9-82fb-43ad-b77b-39883b42bec1
+info:
+  name: Update
+  type: http
+  seq: 7
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/v2/workspaces/:workspace_id/activity_streams/b96b35b0-8f32-4fe5-a6a0-3ced1a4b438a/status/'
+  body:
+    type: json
+    data: |-
+      {
+          "status": "snoozed",
+          "snooze_until": 1648595848
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

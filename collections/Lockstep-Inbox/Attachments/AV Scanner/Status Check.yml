@@ -1,0 +1,8 @@
+uid: d38c9568-e12b-4759-9859-ed5fc5710a75
+info:
+  name: Status Check
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: https://dev-eu-emailservice.azurewebsites.net/api/AvsStatusReceiver?attachmentIds=8050&groupKey=0b26663d-56de-4abc-92de-bf593a6c085b

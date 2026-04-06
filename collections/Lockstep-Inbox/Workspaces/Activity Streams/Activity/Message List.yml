@@ -1,0 +1,8 @@
+uid: f89c2461-6472-49b3-8617-6953a16da364
+info:
+  name: Message List
+  type: http
+  seq: 21
+http:
+  method: GET
+  url: ''

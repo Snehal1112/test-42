@@ -1,0 +1,19 @@
+uid: 4a60c13b-842d-48bc-9fe8-a89fb4700046
+info:
+  name: Remove - Gmail Channel
+  type: http
+  seq: 6
+http:
+  method: DELETE
+  url: '{{BASE_URL}}/api/v2/workspaces/5/channels/21'
+  body:
+    type: json
+    data: |-
+      {
+          "delete_data": "true",
+          "delete_channel": "true",
+          "channel_type": "gmail"
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

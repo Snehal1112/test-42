@@ -1,0 +1,17 @@
+uid: eb91aba0-5816-4b70-a386-2732eaa38f92
+info:
+  name: Dismiss Flag
+  type: http
+  seq: 14
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/v2/workspaces/219/activity_streams/a0dea5cc-7168-4c19-b02c-182997e530cd/activities/386872/dismiss_flag'
+  body:
+    type: json
+    data: |-
+      {
+        "flag": "new_vendor"
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

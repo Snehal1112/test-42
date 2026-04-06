@@ -1,0 +1,23 @@
+uid: 985947b9-b455-490c-8bb3-9d1f3ded927f
+info:
+  name: Update Email Template (Locale Data Only)
+  type: http
+  seq: 3
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/appsmith/v1/email_templates/update_locale_text'
+  body:
+    type: json
+    data: |-
+      {
+      "subject": "<p style=\"margin:0\">New Invoices from <span class=\"editor-snippet\" data-lexical-snippet=\"true\" data-lexical-snippet-key=\"{{YourCompany}}\">Your Company</span></p>",
+      "content":"<p style=\"margin:0\">You have invoices from <span class=\"editor-snippet\" data-lexical-snippet=\"true\" data-lexical-snippet-key=\"{{YourCompany}}\">Your Company</span> for review. You can review the details of these invoices and your records from our customer account portal using the link below.</p><p style=\"margin:0\"></p><p style=\"margin:0\"><span class=\"editor-snippet\" data-lexical-snippet=\"true\" data-lexical-snippet-key=\"{{InvoiceTable}}\">Invoice Table</span></p><p style=\"margin:0\"></br></p><p style=\"margin:0\"><span class=\"editor-snippet\" data-lexical-snippet=\"true\" data-lexical-snippet-key=\"{{PortalLink}}\">Portal Link</span></p><p style=\"margin:0\"><span class=\"editor-snippet\" data-lexical-snippet=\"true\" data-lexical-snippet-key=\"{{YourSignature}}\">Your Signature</span></p><p style=\"margin:0\"></br></p><p style=\"margin:0\"><strong>This email was delivered through Sage Network on behalf of </strong><span class=\"editor-snippet\" data-lexical-snippet=\"true\" data-lexical-snippet-key=\"{{YourCompany}}\">Your Company</span><strong>. Replies to this email will go directly to </strong><span class=\"editor-snippet\" data-lexical-snippet=\"true\" data-lexical-snippet-key=\"{{YourEmailAddress}}\">Your Email Address</span><strong>.</strong></p>",
+      "locale_code": "en-US",
+      "email_template_id": 178,
+      "template_name":"Invoice Notification (Multiple)",
+      "template_description":"Let your customer know that details are available for multiple new invoices."
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

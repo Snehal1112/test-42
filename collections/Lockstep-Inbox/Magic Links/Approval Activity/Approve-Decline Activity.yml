@@ -1,0 +1,15 @@
+uid: 5ef2922f-6636-40c9-b83b-0e25593703b8
+info:
+  name: Approve/Decline Activity
+  type: http
+  seq: 1
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/magic_links/d5a7764b-8893-493a-9bf9-44db47a89c43/activity/review'
+  body:
+    type: json
+    data: |-
+      {
+        "review_action": "decline",
+        "note": "over budget. Can not be approved now."
+      }

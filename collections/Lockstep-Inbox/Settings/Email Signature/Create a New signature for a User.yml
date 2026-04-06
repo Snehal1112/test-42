@@ -1,0 +1,14 @@
+uid: 0d9f691f-ac27-48c3-9580-5be10d19d843
+info:
+  name: Create a New signature for a User
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v2/settings/signature'
+  body:
+    type: json
+    data: '{ "email_signature": "This is dakshita"}'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

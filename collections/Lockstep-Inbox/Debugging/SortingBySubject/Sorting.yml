@@ -1,0 +1,11 @@
+uid: 81ee4a48-3541-4ec0-a8a9-c3d4af43832c
+info:
+  name: Sorting
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/activity_streams/?assignee_type=all&workspace_id=1&page=1&page_size=25&status=active&qs[s]=subject%20asc'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

@@ -1,0 +1,12 @@
+uid: 7f02fca5-91b0-47a4-87c1-4c3bb962c49e
+info:
+  name: DeregisterAllWebhooks
+  type: http
+  seq: 2
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/appsmith/v1/webhooks/deregister'
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

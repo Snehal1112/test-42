@@ -1,0 +1,11 @@
+uid: 7049b190-d80f-4bb0-8309-9e53c074e4d4
+info:
+  name: ap-header-info
+  type: http
+  seq: 2
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/workspaces/1/reports/ap-header?report_date=2022-07-26&company_id=9f32f6c3-e320-4967-a480-f247679ca2fd'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

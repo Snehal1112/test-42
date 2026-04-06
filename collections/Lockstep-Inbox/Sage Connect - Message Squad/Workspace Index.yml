@@ -1,0 +1,11 @@
+uid: 0f3e6589-197c-4012-9a49-ad311506e803
+info:
+  name: Workspace Index
+  type: http
+  seq: 14
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/workspaces'
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

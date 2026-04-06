@@ -1,0 +1,17 @@
+uid: 46c4dae6-d771-4870-b251-03b8998f6d1b
+info:
+  name: Create Token
+  type: http
+  seq: 38
+http:
+  method: POST
+  url: https://dev-eu-loadtest-mock-api.azurewebsites.net/oauth/token
+  body:
+    type: json
+    data: |-
+      {
+        "grant_type": "client-credentials",
+        "client_id": "uwR3URl9TFgezvOKVkY1RLURaWhZZj9F",
+        "client_secret": "8685d132f817231d7c7b413dcf6cf0f49b693d6f13a5d16e",
+        "audience": "snet-cloudops/pp/network/api"
+      }

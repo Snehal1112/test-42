@@ -1,0 +1,36 @@
+uid: 4b4dd1ba-fa97-4e67-81b2-39a6fe4be3cc
+info:
+  name: Create Magic links Copy
+  type: http
+  seq: 4
+http:
+  method: POST
+  url: https://api.dev.lockstep.io/api/v1/useraccounts/magic-links/
+  headers:
+  - name: LS-InternalService
+    value: 681ac5e9b5df4ef39d240c1e44de87ab
+  - name: Content-Type
+    value: application/json
+  - name: Accept
+    value: application/json
+  - name: X-Group-Key
+    value: 5baebd38-3ea0-454a-9b30-ca44ae3fd671
+    disabled: true
+  body:
+    type: json
+    data: |-
+      {
+        "email": "sourav.borah@sage.com",
+        "expiresInMinutes": "10",
+        "applicationId": "00000000-0000-0000-0003-000000000003",
+        "userRole": "00000000-0000-0000-0000-000000000003",
+        "companyId": "567d0e6e-64ec-4511-948a-6b90da1eae35",
+        "accounting_profile_id": "null"
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'
+runtime:
+  scripts:
+  - type: after-response
+    code: "let response = res.getBody()\nlet magicLinkId = response.magicLinkId \nconsole.log(magicLinkId, \"magicLinkId\")\nbru.setEnvVar(\"magicLinkId\", magicLinkId);"

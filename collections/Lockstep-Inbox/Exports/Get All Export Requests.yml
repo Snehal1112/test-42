@@ -1,0 +1,11 @@
+uid: 66d0a2cc-377a-46d8-963d-34c418065c2b
+info:
+  name: Get All Export Requests
+  type: http
+  seq: 2
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/exports'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

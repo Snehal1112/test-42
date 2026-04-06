@@ -1,0 +1,12 @@
+uid: b0fa9dfa-ba3f-4cf4-8ea0-3c83c42a6040
+info:
+  name: Index
+  type: http
+  seq: 4
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/appsmith/v1/app_settings'
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

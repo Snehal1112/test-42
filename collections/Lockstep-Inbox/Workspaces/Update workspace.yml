@@ -1,0 +1,22 @@
+uid: 5c8c1e8e-a31f-4c91-becd-9a8e28e234f7
+info:
+  name: Update workspace
+  type: http
+  seq: 14
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/v2/workspaces/'
+  body:
+    type: json
+    data: |-
+      {
+          "workspaces": [
+              {
+                  "id": 94,
+                  "default": true
+              }
+          ]
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

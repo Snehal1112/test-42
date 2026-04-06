@@ -1,0 +1,12 @@
+uid: f249cbf4-0c0d-4f90-9361-26cc9493d400
+info:
+  name: Deregister
+  type: http
+  seq: 1
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/appsmith/v1/webhooks/deregister?account_id=432'
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

@@ -1,0 +1,29 @@
+uid: db3f04b0-a57a-403d-9aac-70dc4af4b7d1
+info:
+  name: Bulk Create
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/suppressed_customers/'
+  headers:
+  - name: x-group-key
+    value: 6890487c-9191-d987-a7c2-eaf388cc98e6
+  body:
+    type: json
+    data: |-
+      {
+        "type": "automated_message",
+      //   "source": "customer_detail_page",
+        "suppression_type": "excluded",
+        "suppressed_customers": [
+          {
+            "company_id": "aa6c8a17-8fb2-469c-b201-af041b1fba72",
+            "company_name": "CustomerD13"
+          }
+        ],
+        "process_type": "payment_due_reminders"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJVUXlRME0wTWtOQk5rUkJOVGxETXpaQ056VXhPVVUyUkRZNU5EbEJOVVF6T0VSQk1EQXdNQSJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8ZTU3ZWI0NjU3YmE1N2ZhMGU0MjQzYmI3OTFhN2JjNzA5YWVjM2M0Mjg0ZWNkMjgzIiwiYXVkIjpbInNuZXQtZGV2L25ldHdvcmsvYXBpIiwiaHR0cHM6Ly9zYWdlLWNpZC1zaGFkb3cuc2FnZWlkbm9ucHJvZC5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzQ3MjAxNzQ0LCJleHAiOjE3NDcyMzA1NDQsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJ1anozR05waWVpb3VCVjRuSjlmR1ZWcUF6SjdpWEtLcSJ9.32B2Rp-KIfTvu35RVu6WyQeeMJxG6PQqFyCKh8-f8oLTA4fCLjKLObcT58rEG2daq5QvcNAdNQJF0VP9K0r5m90C8q_Imkm0OMsIrbjDOjgitksfHbBZw-_nRAEBITtAlJ3XhVmtTtYTU4pPzAGhhzw674CopfbQUhdq69tbbqYcQncrWUYpo6VGxEaFCzZgm3r-HE3kqptjshd6cmlyc2xjhgvFM9Q7NjNnQJT5QeSv3IDf2Ipni4ws0sDt_v2Hsd52dhQBT6G9eO7CJ_KlWFlW3WLU-ug5FhRHvh_OCQ9B0visEFwAZz9cKfQvzo4_Z90TZKvTl_LdtNLXNJRBhw

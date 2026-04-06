@@ -1,0 +1,21 @@
+uid: 4a33c751-0868-4230-85f0-1effb379463c
+info:
+  name: Add SNS Locale
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/appsmith/v1/suggested_next_steps/create_locale_text'
+  body:
+    type: json
+    data: |-
+      {
+          "title": "Senden Sie einen Testlink",
+          "content": "Testen Sie Ihr Kundenportal, indem Sie sich selbst einen Link zusenden.",
+          "suggested_next_step_id": 14,
+          "locale_code": "de-DE"
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

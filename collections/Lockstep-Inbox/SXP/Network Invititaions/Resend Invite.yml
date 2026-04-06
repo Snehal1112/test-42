@@ -1,0 +1,16 @@
+uid: f12a6869-b3b7-4d67-bf60-65f16dd7a362
+info:
+  name: Resend Invite
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/network_invitations/:token/resend'
+  headers:
+  - name: X-Sxp-Authorization
+    value: '{{SXP_TOKEN}}'
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

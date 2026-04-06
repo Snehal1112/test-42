@@ -1,0 +1,11 @@
+uid: 1b16efa2-145b-4e13-9474-5a7dbc9f8b83
+info:
+  name: Index
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/payments?connection_status_not_in=spam&qa[is_open_eq]=false'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

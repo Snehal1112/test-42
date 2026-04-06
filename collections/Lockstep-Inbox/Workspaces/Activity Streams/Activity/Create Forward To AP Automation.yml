@@ -1,0 +1,26 @@
+uid: bdb13b0a-113a-4398-8599-7bb93ff0ca55
+info:
+  name: Create Forward To AP Automation
+  type: http
+  seq: 6
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v2/workspaces/219/activity_streams/89639962-ce9f-434f-9229-beefdb9801f7/activities/'
+  headers:
+  - name: Authorization
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ikc5MVJYYkhEODNkcHFNRWZkeTJ1Y2NXRDNKclptcG9zaVI2ZHRpN2JQTEkifQ.eyJleHAiOjE2NDM3MzU5OTIsIm5iZiI6MTY0MzczMjM5MiwidmVyIjoiMS4wIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5kZXYubG9ja3N0ZXAuaW8vYTQ4ZmQwZjUtMzhhZC00MDZjLWE4YWUtZWMwMWVkMjVlZmNmL3YyLjAvIiwic3ViIjoiZDdiZWU2NTMtMzQ3Ni00MDhjLWE1NGYtZDYwOWEwZmMwYjkxIiwiYXVkIjoiNWJjODhjNjUtN2ExMi00N2VlLWJhYjgtNjBkMzdlNDhkODM1IiwiYWNyIjoiYjJjXzFhX3NpZ251cF9zaWduaW4iLCJub25jZSI6ImRlZmF1bHROb25jZSIsImlhdCI6MTY0MzczMjM5MiwiYXV0aF90aW1lIjoxNjQzNzMyMzkyLCJvaWQiOiJkN2JlZTY1My0zNDc2LTQwOGMtYTU0Zi1kNjA5YTBmYzBiOTEiLCJlbWFpbHMiOlsibWFuaXNoLm5AbG9ja3N0ZXAuaW8iXSwidGlkIjoiYTQ4ZmQwZjUtMzhhZC00MDZjLWE4YWUtZWMwMWVkMjVlZmNmIn0.N5rvcsUG2ll9vE3loD08OeO2nd7DacH0CNeviyUgo3V4Tx4LZN9-UXsb2uW-dHWXazEf-I8vel7hSARaG-QILGLHd1JN-1lpmnVuBPaSIWde71s-kR6YTULu5_eYDyUPPbTPfz6X9xEnwytJ3wcjsjIZV9CB0joCVfQlBGx5otNXu5FHLz2c2g_HYINJ5n--5U7H9_rfpLvhr2Hb1zyhqUpWoKmaqQOcu9U_ZO6tfAzI8Zqeq5BsbDGlpQdzxppRvxuqTjNy-ukpTfJUDnHrBpx3zEVgcQ77iATpOhuVFGJPFdxp5L29ph2a_RP9_gucHhcTf45UEFMRpUzSbt-zAw
+    disabled: true
+  body:
+    type: json
+    data: |-
+      {
+          "to": ["abdullah@lockstep.io"],
+          "email_action": "reply",
+          "activity_type": "forward_ap_automation",
+          "attachments":  [36308],
+          "subject": "RE: Yet Another Invoice",
+          "content": "<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><meta name=\"Generator\" content=\"Microsoft Word 15 (filtered medium)\"><style>\r\n<!--\r\n@font-face\r\n\t{font-family:\"Cambria Math\"}\r\n@font-face\r\n\t{font-family:Calibri}\r\np.MsoNormal, li.MsoNormal, div.MsoNormal\r\n\t{margin:0cm;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",sans-serif}\r\n.MsoChpDefault\r\n\t{font-size:10.0pt}\r\n@page WordSection1\r\n\t{margin:72.0pt 72.0pt 72.0pt 72.0pt}\r\ndiv.WordSection1\r\n\t{}\r\n-->\r\n</style></head><body lang=\"EN-IN\" link=\"#0563C1\" vlink=\"#954F72\" style=\"word-wrap:break-word\"><div class=\"WordSection1\"><p class=\"MsoNormal\"><span lang=\"EN-US\">Sending Invoice to AP Workspace.</span></p></div></body></html>"
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

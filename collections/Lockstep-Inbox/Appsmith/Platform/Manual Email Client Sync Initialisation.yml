@@ -1,0 +1,19 @@
+uid: 727bb894-3b9a-428f-8cda-1f944f138ac0
+info:
+  name: Manual Email Client Sync Initialisation
+  type: http
+  seq: 7
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/appsmith/v1/email/57/init_client_sync'
+  body:
+    type: json
+    data: |-
+      {
+          "channel_id": 129,
+          "channel_klass": "Channel::MicrosoftOffice"
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

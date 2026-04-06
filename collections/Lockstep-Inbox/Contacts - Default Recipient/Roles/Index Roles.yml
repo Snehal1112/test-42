@@ -1,0 +1,11 @@
+uid: 98de17ef-be45-4f0a-8cc5-e2d32baae7fb
+info:
+  name: Index Roles
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v3/contacts/roles'
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

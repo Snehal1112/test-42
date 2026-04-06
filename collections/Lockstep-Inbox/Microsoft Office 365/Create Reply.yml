@@ -1,0 +1,34 @@
+uid: d1f8c351-5ea8-4272-9bcb-d5e46e3c2ca9
+info:
+  name: Create Reply
+  type: http
+  seq: 6
+http:
+  method: POST
+  url: https://graph.microsoft.com/v1.0/Me/Messages/AQMkADAwATM0MDAAMS0zZjRlLTJiMGQtMDACLTAwCgBGAAAD5o5Ul2UKk0eLPamx5ITV3QcAGdXydFuq1k2WuO-GVTKg4QAAAgEJAAAAGdXydFuq1k2WuO-GVTKg4QAAAmIjAAAA/createReply
+  body:
+    type: json
+    data: |-
+      {
+          "subject":"Did you see last night's game?",
+          "importance":"Low",
+          "body":{
+              "contentType":"HTML",
+              "content":"They were <b>awesome</b>!"
+          },
+          "toRecipients":[
+              {
+                  "emailAddress":{
+                      "address":"AdeleV@contoso.onmicrosoft.com"
+                  }
+              },
+              {
+                  "emailAddress":{
+                      "address":"vivek.a@lockstep.io"
+                  }
+              }
+          ]
+      }
+  auth:
+    type: bearer
+    token: EwBwA8l6BAAUwihrrCrmQ4wuIJX5mbj7rQla6TUAAY1+/tf7nqsEN3Ivj0MKbAk4Jo9Yzx7XLEJQr4O9Oqn9Nd/YeSAbKWEjc+VTKK3ac5h3zsGC7vs8lYlhV+5zw/8Gi1dXWHPJD/BqGP6lTo6/bmBkZbDbUYMuNlLmBxnKKY7o03bzmqcOyL3yMreSHCvEoTZup4R6eddeUH0m9RK8/cHSLj/kXt4ozWU2ZM4IxBl1mqoVz7ejhxxVGaRYu8TfWwXzkvNFndcqbliV+LBgPPCNTCc3RbxZq9p1p5hGVakT9ec2YBcy2r2wisAKv9qQKj+Py1raI1tpd8ESJC0GESHr1kf3qfiXMzZbh/0sMLLqY9PiYY4OLxeCNXn5OkgDZgAACL5Ql5vvHk+FQAJfpuhZTO6nejXWjJCwT7IMf/gGOqaGe7j8+k9hkvfN008NxwAPmM4NRgVDeBmiNU/on6W/yL2v/O3Y1pyoSrHB1qGocEnYtQS4wGrjL9m30c44h86uy8s0OxbDFXZqoV1qF/pJInRD9mEuSwclWng3zikyAFAzRhiwhD3gIDdEUVhGKmIKKkOW8rt13ySbCAHcARFbh4OINSLi6OeJ/PDn6C8zfGnwxDX2W+F67KUEbcOZyiFVcPxvlSImE1dmGEyhGNUqUswfpPCrlktWWwQNTr38P2y2VYGOJHdD16sCDEfpmmWcXQw07Umm9FIZMMgQCk5Pih6MQtx/wu0XwW7mywj9dmuVVKHxUXrtfbNtEfSKety0kJ+YKMG/4oP0QI2b/cbpeZzdAdIZFhtwfi45m6rwyfTvLY62IbrMzbXHS+3lEGpITQfOZGa1VJnGJNtMzNo7q8puFpHR+DY6A9QSCo89MdClkxY3zrN46PoeUyzpgXAMSIjITJG4qeCGFoUL4oAFqVgu6ZdzNjv/i708D/4vlGH8vUFAdbIYhmvLcxGo/tBfgmVPluwb5XBEApux9wauUjYnkQQzMdtzptBtRLg6DMvY2rWGUTO/QEmfnDBs4c1w2GCvks3T/1g0m+s/mytzrH09XjV48U7TmNJ3KJRTJBWCyoOloAYX3uZ8dAhbK0I1GMxe7KQeGvSI9ex34izxqjdh+9qQJFIUFHTGCoi5a1XvleD7hLX/SyXJ7DqJFviwiHaA0piCpEsMCrSCAg==

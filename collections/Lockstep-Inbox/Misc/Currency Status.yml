@@ -1,0 +1,11 @@
+uid: b442472c-6be4-4de2-8ec1-020a60ece17c
+info:
+  name: Currency Status
+  type: http
+  seq: 4
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/status/currency'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

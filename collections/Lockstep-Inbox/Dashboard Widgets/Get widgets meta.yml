@@ -1,0 +1,14 @@
+uid: 34069d60-b314-4713-962d-e2a9a1e40383
+info:
+  name: Get widgets meta
+  type: http
+  seq: 2
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v3/widgets/meta'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

@@ -1,0 +1,20 @@
+uid: e51a4815-81ce-4101-b13d-b3b37f7ad4a6
+info:
+  name: Trigger Cleanup DUPLICATE accounts and users
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/appsmith/v1/one_time_tasks/trigger_cleanup_duplicate_account_and_users'
+  body:
+    type: json
+    data: |-
+      {
+          "dry_run": false,
+          "group_keys": ["7403dd85-4139-776c-4054-1af4b9275190"],
+          "user_lockstep_ids": ["de867a41-9eb0-4a16-9100-83790ded6362"]
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

@@ -1,0 +1,19 @@
+uid: 3e6aef1b-b96b-4682-8b40-412d6540ae16
+info:
+  name: Delete Automated Email Template
+  type: http
+  seq: 4
+http:
+  method: DELETE
+  url: '{{BASE_URL}}/api/appsmith/v1/email_templates/delete_automated_message'
+  body:
+    type: json
+    data: |-
+      {
+          "template_code": "END_OF_MONTH_REMINDER",
+          "account_id": null
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

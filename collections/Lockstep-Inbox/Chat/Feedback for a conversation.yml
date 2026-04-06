@@ -1,0 +1,21 @@
+uid: 0c17d5a0-cc12-42fe-a589-76d1a8cce041
+info:
+  name: Feedback for a conversation
+  type: http
+  seq: 4
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/chatbot/feedback/:session_id/:request_id'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  body:
+    type: json
+    data: |-
+      {
+        "rating": "Poor",
+        "comment": "Service is not responding with cexpected ans"
+      }
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

@@ -1,0 +1,19 @@
+uid: df91d314-2e8d-4535-97b1-bc81b77d2228
+info:
+  name: Reset Non Existent Records
+  type: http
+  seq: 5
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/appsmith/v1/platform/88/reset_non_existent_records'
+  body:
+    type: json
+    data: |-
+      {
+          "model": "Platform::CustomerSummary",
+          "dry_run": false
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

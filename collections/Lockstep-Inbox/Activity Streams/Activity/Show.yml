@@ -1,0 +1,11 @@
+uid: a9f8b7c8-6fb5-4c4d-98aa-369a0865beb2
+info:
+  name: Show
+  type: http
+  seq: 6
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/activity_streams/ed3a96ef-518d-44b9-bc82-b4672338c07b/activities/439'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

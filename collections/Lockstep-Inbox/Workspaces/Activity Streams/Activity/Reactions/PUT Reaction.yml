@@ -1,0 +1,11 @@
+uid: b2732c99-5e60-471c-b870-85af807066d1
+info:
+  name: PUT Reaction
+  type: http
+  seq: 2
+http:
+  method: PUT
+  url: '{{BASE_URL}}/api/v2/workspaces/3/activity_streams/b09a9eff-5cde-4087-899f-05d330305994/activities/23114/reactions/e790d0b5-b542-48e7-9eb9-43581e0b975f?account_id=2&user_id=2&reaction_type=1'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

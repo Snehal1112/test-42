@@ -1,0 +1,14 @@
+uid: 62187259-940c-44fa-8835-4f5b0e0275ee
+info:
+  name: Delete Config - Inbox
+  type: http
+  seq: 4
+http:
+  method: DELETE
+  url: '{{BASE_URL}}/api/v3/payment_providers/:provider_account_id'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

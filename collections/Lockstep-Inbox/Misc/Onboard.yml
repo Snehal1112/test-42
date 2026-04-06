@@ -1,0 +1,14 @@
+uid: 7b6c5cc4-9fc2-4dd3-9c05-8e29facb2ec6
+info:
+  name: Onboard
+  type: http
+  seq: 8
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/onboard'
+  headers:
+  - name: x-group-key
+    value: '{{GROUP_KEY}}'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

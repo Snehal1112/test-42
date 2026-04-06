@@ -1,0 +1,55 @@
+uid: cca6a537-5bf3-4300-9624-a0ebca1658db
+info:
+  name: Delete
+  type: http
+  seq: 4
+http:
+  method: DELETE
+  url: '{{BASE_URL}}/api/appsmith/v1/table_configs/:id'
+  body:
+    type: text
+    data: |-
+      {
+          "table_name": "invoices_table",
+          "screen_code": "HOME",
+          "config": {
+              "columns": [
+                  {
+                      "name": "Invoice Number",
+                      "accessor": "invoice_number",
+                      "columnHeaderAlign": "left",
+                      "enableSort": true,
+                      "enableSearch": true,
+                      "enableFilter": true,
+                      "enableSkeleton": true,
+                      "secondarySort": "due_date",
+                      "rowDataAlign": "right",
+                      "rowDataType": "string",
+                      "filterType": "text",
+                      "skeletonWidthInPX": 100,
+                      "skeletonHeightInPX": 20,
+                      "filterComparator": "equals"
+                  },
+                  {
+                      "name": "Customer Name",
+                      "accessor": "customer_name",
+                      "columnHeaderAlign": "center",
+                      "enableSort": true,
+                      "enableSearch": true,
+                      "enableFilter": true,
+                      "enableSkeleton": true,
+                      "secondarySort": "invoice_number",
+                      "rowDataAlign": "left",
+                      "rowDataType": "string",
+                      "filterType": "text",
+                      "skeletonWidthInPX": 120,
+                      "skeletonHeightInPX": 20,
+                      "filterComparator": "contains"
+                  }
+              ]
+          }
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

@@ -1,0 +1,12 @@
+uid: 954bfbf7-4e18-4b61-9064-1b3e084bb94e
+info:
+  name: Migrate SNS Data
+  type: http
+  seq: 4
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/appsmith/v1/suggested_next_steps/migrate_sns_data?dry_run=false'
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

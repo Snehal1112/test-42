@@ -1,0 +1,16 @@
+uid: 4ef9e564-e921-4b27-88fe-ba26b036e955
+info:
+  name: Cancel Invite
+  type: http
+  seq: 2
+http:
+  method: PUT
+  url: '{{BASE_URL}}/api/v3/network_invitations/:token/cancel'
+  headers:
+  - name: X-Sxp-Authorization
+    value: '{{SXP_TOKEN}}'
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

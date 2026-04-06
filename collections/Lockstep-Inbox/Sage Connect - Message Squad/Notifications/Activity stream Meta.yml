@@ -1,0 +1,18 @@
+uid: 190860eb-b101-43ba-b13f-f80f7fc4ed97
+info:
+  name: Activity stream Meta
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/activity_streams/meta'
+  body:
+    type: json
+    data: |-
+      {
+          // "company_ids": "5d87f4ce-c23a-460f-b6e4-39f1d2caf134, e3d5ed71-0b35-43c2-8121-cab25c6c62c3"
+          "transaction_ids": "3279e7bb-9577-484b-87c5-8d118a19cacd, 6d44cffc-3a29-4208-afd6-86c3ae5de548"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJVUXlRME0wTWtOQk5rUkJOVGxETXpaQ056VXhPVVUyUkRZNU5EbEJOVVF6T0VSQk1EQXdNQSJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8ZDE5Mjc2ZmI0YTI3NGI2MGM2ZjhjMjg0Yzc5MDkxMWUxNWYxZjBmNjZmYWU0NmJjIiwiYXVkIjpbInNuZXQtZGV2L25ldHdvcmsvYXBpIiwiaHR0cHM6Ly9zYWdlLWNpZC1zaGFkb3cuc2FnZWlkbm9ucHJvZC5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzI0NzMyMDg2LCJleHAiOjE3MjQ3NjA4ODYsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJmN1Jua084VmFIWmFwcWJqRjVOaWRjSTg4MGM5SXZ1QyJ9.uhUaToTPYKHzW3oCs82coqS08f_PCP8ScGEUk1oyYs3ow-wbEhV7nrQWoAqTLSDgw3g5-DMnT9utb6s_RuzdOKvo_Fv2i4dYT0Nr1eRnlV0fLlDlg2iQg8Pp0JbXb0536GwVFjUT2JJ0Ly0bfVTI_NvsSqYLIHcNteLcBjGxrLPVGKGt0HwvxreguL6RcE1leQ2sQZSsQe_nBH4LR_mkYzmSodt3R-CyGiiNW5rwKF8rZZRa12hIUbqWz06OggijfmuBsvYYvsZzot7ybBA9cKx3igVukv0CURDnoLgF8goByigVXTdUMceDKA2v_e8Hi_E4CSOqQkKpdjgcX1LIdg

@@ -1,0 +1,8 @@
+uid: 740889d0-870e-4bb8-87a4-5349e650efab
+info:
+  name: Mocktail Status
+  type: http
+  seq: 46
+http:
+  method: GET
+  url: https://preprod-eu-loadtest-mock-api.azurewebsites.net/api/V1/Status

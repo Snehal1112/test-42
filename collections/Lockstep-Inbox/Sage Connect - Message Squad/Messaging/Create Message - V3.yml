@@ -1,0 +1,36 @@
+uid: 5f75a89e-40db-41af-ac3d-24a6f93a433d
+info:
+  name: Create Message - V3
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/activity_streams'
+  body:
+    type: json
+    data: |-
+      {
+          "email_type": "in_app_message", // Message starts from portal and hence is In App Message
+          "receiver": { // Sage Connect
+              "company_id": "bd0aa001-c019-4f6f-b6b6-e3f95de1c207",
+              "company_name": "SNA QBO QA 3"
+              // "email_address": "sna_3_qbo@sharklasers.com"
+          },
+          "sender": { // Portal
+              "company_id": "6ed09b68-a5e0-4007-8bb7-0807e9315574",
+              "company_name": "Dermi Cool",
+              "email_address": "blk_email_test_all_env@sharklasers.com"
+          },
+          "subject": "Welcome to your online statement from PORTAL!",
+          "content": "We are excited to offer you access to view your invoices online directly using your unique and secure link. In our customer account portal, you can view and download copies of open and closed invoices, export data, and more. To get started, ase notify us and delete this message.\n  </p>"
+          // "attachments": [
+          //     {
+          //         "id": 1
+          //     }
+          // ],
+          // "transaction_id": "906ebe5d-ec18-4747-b087-063a46d9e092",
+          // "transaction_type": "Invoices"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJVUXlRME0wTWtOQk5rUkJOVGxETXpaQ056VXhPVVUyUkRZNU5EbEJOVVF6T0VSQk1EQXdNQSJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8MDg5NWU3MWNkNmE2OTc2OTgxY2I5NTA3NWE2ZmRiMDBlMWU2NDNhNWY0N2M3ZDk2IiwiYXVkIjpbInNuZXQtZGV2L25ldHdvcmsvYXBpIiwiaHR0cHM6Ly9zYWdlLWNpZC1zaGFkb3cuc2FnZWlkbm9ucHJvZC5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzI3NzA1Nzc5LCJleHAiOjE3Mjc3MzQ1NzksInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJ1anozR05waWVpb3VCVjRuSjlmR1ZWcUF6SjdpWEtLcSJ9.1vPAMwC5ucq4fBAFvrnMFnNclGwX25vkSHN1FqMV5FlJ4YDxLuisNNAB1mm13HpbjNjd_bnWMvZRDwm-HiyA7U2IhgtfAFLflFKG4pbVWLSmw6kTUqUT0mdNCX14PeKqw7-kaKxlCQ8lGd23BH8ClxfW5iQ-dWqQwLo2fKuje6S6IEnDrV_4UAyViZ4mGW29tP40sbNSjHOoqOz4k2vJrJfNVQkRdnMTcazo6od6oBQz9BBQ6gFfZfZwNnqfStY21SAc5jI2dIFNlq8xS1ohdqKeopl4fZDElL4p3qRdgsZlFs3e_i7TXZtK5NPGulFl-Hgh8DAD1GeZQ_uQQUDYVA

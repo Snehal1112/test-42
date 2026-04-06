@@ -1,0 +1,30 @@
+uid: f06dee3d-b3f1-4cd5-bed4-76c7cd52fed5
+info:
+  name: send emails
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/connections/invite'
+  body:
+    type: json
+    data: |-
+      {
+          "invite_type": "manual_select",
+          "content": " test",
+          "subject": "Invitations test on dev",
+          "connection_ids": ["89df4430-0bf2-41ae-8a5e-da83a863bea2"],
+          "connected_email": "harmeet.gulati@sage.com",
+          "pendo_data": {
+              "visitor_id": "",
+              "account_id": "",
+              "event": "Links Sent",
+              "properties": {
+                  "event_type": "bulk_invitations"
+              }
+          }
+          //"filters": "7QSq2OBylun+8siI7MijOUqOBLI+PEgNI8vucsPJ3TUSpx0/drM/Suw0InYzybxsIfM5WS9paDGc7sB8OL/amZFYluKTvY12HLQMK3pZHH8="
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

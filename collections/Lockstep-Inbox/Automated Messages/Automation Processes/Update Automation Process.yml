@@ -1,0 +1,50 @@
+uid: e179a1ba-0135-4382-a5d0-b3eeacb289b7
+info:
+  name: Update Automation Process
+  type: http
+  seq: 2
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/v3/automation_processes/3492283f-a15e-4480-b04b-e816607e0460'
+  headers:
+  - name: x-group-key
+    value: '{{GROUP_KEY}}'
+  body:
+    type: json
+    data: |-
+      {
+        "enabled": true,
+        "process_type": "payment_due_reminders",
+        "attach_pdfs": false,
+        "recipients_selection": "all",
+        "primary_contact_language_preference": false,
+        "automated_templates": [
+          {
+            "id": "0c25fd8c-5be8-4668-84cd-7c5fb66b0570",
+            "enabled": false,
+            "automation_rules": {
+              "days_relative_to_due_date": 3
+            },
+            "template_code": "INVOICE_COMING_DUE"
+          },
+          {
+            "id": "2c6ce1dc-47ae-473d-8bdd-025191ae7ffa",
+            "enabled": false,
+            "automation_rules": {
+              "days_relative_to_due_date": 3
+            },
+            "template_code": "SNA_INVOICE_PAST_DUE_REMINDER"
+          },
+          {
+            "id": "e976ece5-e704-40e4-b26c-b42607862068",
+            "enabled": true,
+            "automation_rules": {
+              "days_relative_to_due_date": 5
+            },
+            "template_code": "INVOICE_PAST_DUE_SECOND_REMINDER"
+          }
+        ]
+      }
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

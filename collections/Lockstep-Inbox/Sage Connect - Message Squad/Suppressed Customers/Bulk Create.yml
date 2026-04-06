@@ -1,0 +1,14 @@
+uid: bfae1f92-74ca-4bf3-8330-543151559071
+info:
+  name: Bulk Create
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/suppressed_customers/'
+  body:
+    type: json
+    data: "{  \n    \"ids\": [\"1f36f157-328e-47f8-bb46-85467a9325da\"], //to discuss and keep only ids\n    // Present when the suppressed list is only for that particular template. \n    // NULL if the suppression is for all automated templates.\n    \"type\": \"automated_message\",\n    \"suppressed_customers\": [\n            // {\n            //     \"company_id\": \"4dedb9e3-6ec6-43c0-b97e-5511e9a7c758\",\n            //     \"company_name\": \"Geeta Kalapatapu\"\n            // },\n            // {\n            //     \"company_id\": \"3e650895-7587-47ac-ac55-ea5e24049466\",\n            //     \"company_name\": \"Freeman Sporting Goods\"\n            // }\n            context[:included_customers_query]\n    ],\n    \"suppression_type\": \"excluded\"\n    // \"source\": \"\"\n}"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJVUXlRME0wTWtOQk5rUkJOVGxETXpaQ056VXhPVVUyUkRZNU5EbEJOVVF6T0VSQk1EQXdNQSJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8MDg5NWU3MWNkNmE2OTc2OTgxY2I5NTA3NWE2ZmRiMDBlMWU2NDNhNWY0N2M3ZDk2IiwiYXVkIjpbInNuZXQtZGV2L25ldHdvcmsvYXBpIiwiaHR0cHM6Ly9zYWdlLWNpZC1zaGFkb3cuc2FnZWlkbm9ucHJvZC5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzMxNjYyNjQ2LCJleHAiOjE3MzE2OTE0NDYsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJmN1Jua084VmFIWmFwcWJqRjVOaWRjSTg4MGM5SXZ1QyJ9.bMlU9pNNAIztILFAKBp1p5W11D_xYsHIuidhR5PMIhYHiMN-eziNI6j_M4FooCBv4XsZfSyynT-0RZky3iaHycoCXJM3fFMbuGQgIdeKKZCDniLgj1un4E8z2VMTdsN06SGBNuqHvelMfsFNWJ4GiHpg0CDJmhojJ7KVhKZfafiuHXEG90XBZMjw6J95ZLhfJPHLmQG8rv6hSLLt7tM4hzTw_9kyLW1wcQXz2bXN7KH0ILsx_wITfaG748qNaPWxR3KkxDLNXhe6ubOsgk060kTL_aBmNmTjzrquxHcaNPToJmNn93Ark5fx6pFdM-PHsKLQpDV_yXK53DQfEk6gjA

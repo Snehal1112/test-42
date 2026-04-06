@@ -1,0 +1,36 @@
+uid: fd0a7dbc-b0d6-4f3a-8339-c91156a33e7c
+info:
+  name: Invoke Webhook
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v2/webhooks/updateInvoiceWebhook::Invoice::Update/invoke'
+  headers:
+  - name: ls-webhook-client-key
+    value: 5LX8N0s34DaGJWeKr1bAMssj40Bn1BWlPP6jNOKNjgle2K3ALOZtxGRhrus5GTgbW4ut02mW8gVWCBl6G1pGRAbOq91OY7wd88SF
+  body:
+    type: json
+    data: |-
+      {
+          "WebhookId": "b711fe77-631e-4153-bcbb-6c4442f9f980",
+          "EventId": "8e96b49d-cdd2-4801-a986-82339bba1265",
+          "Event": "Company.Update",
+          "GroupKey": "a4429a01-e38e-448d-9fda-754f8f230b4e",
+          "Timestamp": "2023-05-10T16:04:53.550126+00:00",
+          "Data": [
+              {
+                  "Id": "f5ca6e53-8829-4dc9-a066-17c6ef6d34fc",
+                  "ResourceUrl": "https://api.dev.lockstep.io/api/v1/Companies/f5ca6e53-8829-4dc9-a066-17c6ef6d34fc",
+                  "Entity": {
+                      "InvoiceId": "ade191a6-a42a-4137-8160-97fe98b8956f",
+                      "InvoiceStatusCode": "Closed",
+                      "InvoiceTypeCode": "AR Invoice"
+                  }
+              }
+          ]
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

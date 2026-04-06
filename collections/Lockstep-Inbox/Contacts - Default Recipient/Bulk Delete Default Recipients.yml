@@ -1,0 +1,17 @@
+uid: 4eba6076-a95e-4dea-8969-eb2ba1ace6b1
+info:
+  name: Bulk Delete Default Recipients
+  type: http
+  seq: 5
+http:
+  method: DELETE
+  url: '{{BASE_URL}}/api/v3/contacts/default_recipients'
+  body:
+    type: json
+    data: |-
+      {
+          "contact_ids": ["uuid1"]
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

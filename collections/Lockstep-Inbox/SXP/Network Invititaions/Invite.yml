@@ -1,0 +1,31 @@
+uid: 2f9a40c2-2ccb-41ef-a819-c333bfa07bd5
+info:
+  name: Invite
+  type: http
+  seq: 4
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/network_invitations/invite'
+  headers:
+  - name: X-Sxp-Authorization
+    value: '{{SXP_TOKEN}}'
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  body:
+    type: json
+    data: |-
+      {
+          "email": "baseuser@gmail.com",
+          "locale": "en-US",
+          "account_permissions": {
+              "user_management": false
+          },
+          "roles": [
+              {
+                  "role_id": "8e9b43a9-c4e0-d6a3-ea47-2a6eb4062960"
+              }
+          ]
+      }
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

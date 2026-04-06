@@ -1,0 +1,12 @@
+uid: fc660b5a-1f4f-43fb-a090-5e58b5d1ef86
+info:
+  name: Check Sidekiq Scaling
+  type: http
+  seq: 6
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/ado/v1/check_sidekiq_scaling?queue_name=default'
+  auth:
+    type: basic
+    username: '{{task_username}}'
+    password: '{{task_password}}'

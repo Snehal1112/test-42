@@ -1,0 +1,20 @@
+uid: dac6a24e-f156-4e51-be21-c5a63b768828
+info:
+  name: M2M Patch Connection
+  type: http
+  seq: 6
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/v3/m2m/email_providers/:connection_id'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  body:
+    type: json
+    data: |-
+      {
+        "is_suspended": true
+      }
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

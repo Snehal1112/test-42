@@ -1,0 +1,11 @@
+uid: 3b7dfeb4-16e1-4223-b991-fea245be295c
+info:
+  name: Index
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/invoices.json/?qa[invoice_type_code_eq]=AR Invoice&qs[s]=invoice_number desc&page_size=25&qa[invoice_number_cont]=1074'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

@@ -1,0 +1,8 @@
+uid: d5c6810e-2ac2-4fe8-bd48-dcc40d1873c5
+info:
+  name: Email Sync Status
+  type: http
+  seq: 8
+http:
+  method: GET
+  url: ''

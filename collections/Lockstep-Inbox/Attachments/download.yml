@@ -1,0 +1,18 @@
+uid: 9c7e803d-cb5e-4851-b376-958d0d3b3a18
+info:
+  name: download
+  type: http
+  seq: 7
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v3/attachments/download'
+  body:
+    type: json
+    data: |-
+      {
+          "attachment_id": "22",
+          "disposition": "inline"
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

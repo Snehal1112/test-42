@@ -1,0 +1,14 @@
+uid: d384a9df-0767-4b54-9914-e02aa25a814a
+info:
+  name: Update a signature for a user
+  type: http
+  seq: 2
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/v2/settings/signatures'
+  body:
+    type: json
+    data: '{"email_signature": "Dakshita"}'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

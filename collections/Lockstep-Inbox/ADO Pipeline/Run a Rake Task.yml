@@ -1,0 +1,12 @@
+uid: 38423632-fdf8-4a30-8762-a25e9c0189cd
+info:
+  name: Run a Rake Task
+  type: http
+  seq: 5
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/ado/v1/invoke_rake_tasks/register_load_test_webhook/invoke_task'
+  auth:
+    type: basic
+    username: '{{task_username}}'
+    password: '{{task_password}}'

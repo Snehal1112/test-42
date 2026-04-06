@@ -1,0 +1,19 @@
+uid: 48df8d41-4823-4e75-a2e5-8c68bcdbb786
+info:
+  name: Trigger Automated Message
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/appsmith/v1/email_templates/trigger_automated_message'
+  body:
+    type: json
+    data: |-
+      {
+          "account_id": 181,
+          "template_code":"ACCOUNT_BALANCE"
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

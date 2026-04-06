@@ -1,0 +1,11 @@
+uid: fdb084a2-559f-4e89-80a5-e7096c5877d8
+info:
+  name: Related Transactions
+  type: http
+  seq: 10
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/workspaces/1/activity_streams/related_transactions'
+  auth:
+    type: bearer
+    token: ''

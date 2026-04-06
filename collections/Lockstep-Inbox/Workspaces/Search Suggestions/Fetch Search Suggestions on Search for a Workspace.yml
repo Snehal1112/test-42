@@ -1,0 +1,17 @@
+uid: 601b2d86-d7c7-4e4e-bca3-3a5308c31cde
+info:
+  name: Fetch Search Suggestions on Search for a Workspace
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/workspaces/219/search_suggestions'
+  body:
+    type: json
+    data: |-
+      {
+          "category": "activity_streams"
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

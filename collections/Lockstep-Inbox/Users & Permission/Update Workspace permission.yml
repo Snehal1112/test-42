@@ -1,0 +1,20 @@
+uid: e62a1abc-e7df-42b5-be24-340f815985de
+info:
+  name: Update Workspace permission
+  type: http
+  seq: 4
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/v2/user_accounts/ab03b3fb-64a0-4e32-bb1d-e0303f0a3e41'
+  body:
+    type: json
+    data: |-
+      {
+          "lockstep_id":  "ab03b3fb-64a0-4e32-bb1d-e0303f0a3e41",
+          "email": "abdullah@lockstep.io",
+          "name": "Abdullah",
+          "workspace_permissions": ["accounts_receivable", "accounts_payable"]
+      }
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ikc5MVJYYkhEODNkcHFNRWZkeTJ1Y2NXRDNKclptcG9zaVI2ZHRpN2JQTEkifQ.eyJpc3MiOiJodHRwczovL2xvZ2luLmRldi5sb2Nrc3RlcC5pby9hNDhmZDBmNS0zOGFkLTQwNmMtYThhZS1lYzAxZWQyNWVmY2YvdjIuMC8iLCJleHAiOjE2NjExNjE1NzAsIm5iZiI6MTY2MTE1Nzk3MCwiYXVkIjoiNWJjODhjNjUtN2ExMi00N2VlLWJhYjgtNjBkMzdlNDhkODM1Iiwic3ViIjoiMjMwZWJjNmQtNWZjMC00NDA5LWE3ZDctMTUzZDMyMDAxZTVhIiwib2lkIjoiMjMwZWJjNmQtNWZjMC00NDA5LWE3ZDctMTUzZDMyMDAxZTVhIiwiZW1haWxzIjpbInZpdmVrLmFAbG9ja3N0ZXAuaW8iXSwidGlkIjoiYTQ4ZmQwZjUtMzhhZC00MDZjLWE4YWUtZWMwMWVkMjVlZmNmIiwiYXpwIjoiNWJjODhjNjUtN2ExMi00N2VlLWJhYjgtNjBkMzdlNDhkODM1IiwidmVyIjoiMS4wIiwiaWF0IjoxNjYxMTU3OTcwfQ.e12YnIZkIJ5ZbrAWSIDc3xcZRcV8WSHdr6cg5NQEj225wqBxJhOAizQkQC_4ypdFmi2Nh8Gy6AygCM-jTn2ReyGbr0Ml9xGdYlgcaR8S1qEMYPPWI1vGJA7qPDC4JdZtPljm4rtD5YcfPyvyUSvnr80ubWV0KOf1QNe7XLm4UZpMXJvSxD5iPFBCoNRKLTr5WKNlpxd1Gl3GuyJMXk_0fqSNTtzPQmyOLy4wYTdcahke0PKomPNDoeEEv_cyXu4WPvhFodQkCmlBIL8CmYtCPvxfeGCLWAJ5bf0FY0qgGKmngyckVKMgF-kQUAFVJBR1y4vxv8WIWcgnN_No0wxZ4A

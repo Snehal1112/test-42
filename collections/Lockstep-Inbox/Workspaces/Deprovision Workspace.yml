@@ -1,0 +1,11 @@
+uid: 9e67b969-b5bc-4c38-a13e-9c3e6c5b247a
+info:
+  name: Deprovision Workspace
+  type: http
+  seq: 13
+http:
+  method: DELETE
+  url: '{{BASE_URL}}/api/v2/workspaces/1'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

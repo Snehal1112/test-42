@@ -1,0 +1,14 @@
+uid: 126eec88-c2ca-441a-a669-ea27f0396a24
+info:
+  name: Index
+  type: http
+  seq: 2
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/workspaces/26/email_templates?template_type=sna&segment=customer_management'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  auth:
+    type: bearer
+    token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJVUXlRME0wTWtOQk5rUkJOVGxETXpaQ056VXhPVVUyUkRZNU5EbEJOVVF6T0VSQk1EQXdNQSJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8MDU1ZTk4NjE1NDViODNjNjI3OWFjYjA4MjcxYWQ1NmU1Njk1MjQ2YjY4NmEyZmY1IiwiYXVkIjpbInNuZXQtZGV2L25ldHdvcmsvYXBpIiwiaHR0cHM6Ly9zYWdlLWNpZC1zaGFkb3cuc2FnZWlkbm9ucHJvZC5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzQ3MzQxMzM3LCJleHAiOjE3NDczNzAxMzcsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJ1anozR05waWVpb3VCVjRuSjlmR1ZWcUF6SjdpWEtLcSJ9.PhojFB0_Ph5nVofCD3Kr6YtL6ZZXRstwilkUxSYscjkeJYFxdurLa-eV4mb_CLErrdXBMhIllND0DnBsxF0icyF_6bAKro05CnhazSEaQr6r3atI24g9Kfl9kLvaJQyA4MfLqzG33TUzBe-KkeenXeMTPKnQ51HnFaMuXqLpbg_NaRIiOmpfMri2R8mFcqkwHzMPvNhDEkHgqpZADzTuR2SeyW8Fp8-RtWl8CNPzluYFdoE3P4hpYwTiM2irifL2AJOGk7H66UMkbttyNWmaNsVYXsQzRcp_9aodF-rWKxtfuteshSTDIcYK5WkO62vRdjRse7pkwJ7KsZtsJ2RD-A

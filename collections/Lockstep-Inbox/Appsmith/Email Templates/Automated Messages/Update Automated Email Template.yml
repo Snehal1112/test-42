@@ -1,0 +1,25 @@
+uid: f0824857-9eaa-4125-bbfd-85981ad451c0
+info:
+  name: Update Automated Email Template
+  type: http
+  seq: 3
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/appsmith/v1/email_templates/update_automated_message'
+  body:
+    type: json
+    data: |-
+      {
+          "template_code": "EXPIRED_LINK_USERS",
+          "account_id": null,
+          "is_active": true,
+          "schedule": {
+              "frequency": "daily", // daily, weekly, monthly
+              "day_of_execution": 0, // 0 - First Business day, 1 - 28 (For day value), 29 - Last business day
+              "time_of_execution": "13:00" // 24H format
+          }
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

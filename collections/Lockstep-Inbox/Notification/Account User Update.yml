@@ -1,0 +1,17 @@
+uid: da8e4a55-3e8e-4ea7-9dbb-12ae3c952a03
+info:
+  name: Account User Update
+  type: http
+  seq: 3
+http:
+  method: PATCH
+  url: 127.0.0.1:3001/api/v2/account-users
+  body:
+    type: json
+    data: |-
+      {
+          "suggested_response_setting": false
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

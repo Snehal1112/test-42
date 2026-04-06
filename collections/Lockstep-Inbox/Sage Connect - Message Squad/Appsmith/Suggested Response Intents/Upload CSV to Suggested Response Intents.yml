@@ -1,0 +1,15 @@
+uid: 78234ef6-440a-48dc-940d-2fbdf0a160ca
+info:
+  name: Upload CSV to Suggested Response Intents
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/appsmith/v1/suggested_response_intents/upload'
+  body:
+    type: multipart-form
+    data: []
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

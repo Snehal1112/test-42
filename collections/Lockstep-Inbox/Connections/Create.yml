@@ -1,0 +1,24 @@
+uid: 9776e8ec-6dd5-4294-aa08-5ffa69b05126
+info:
+  name: Create
+  type: http
+  seq: 2
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v2/connections/workspace_mappings/'
+  body:
+    type: json
+    data: |-
+      {
+          "connection_ids": ["b0846178-2277-4946-baca-3141c2f87731"],
+          "status": "spam",
+          "workspace_id": 3,
+          "filter_status": "active",
+          "select_all": true, //optional
+          "qa": {
+              "company_name_cont_any": "t"
+          } //optional
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

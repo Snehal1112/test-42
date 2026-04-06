@@ -1,0 +1,11 @@
+uid: 5e3aae8a-cd6b-4bca-810d-76304e6cc5eb
+info:
+  name: Index
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/notifications/settings'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

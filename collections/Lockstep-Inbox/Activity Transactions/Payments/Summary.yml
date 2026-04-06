@@ -1,0 +1,11 @@
+uid: 7dcc8c55-59fa-42f7-ba37-7ba436634ed9
+info:
+  name: Summary
+  type: http
+  seq: 2
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/payments/summary?qa[payment_type_eq]=AR Payment&connection_status_not_in=active,spam,archived'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

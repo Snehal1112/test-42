@@ -1,0 +1,11 @@
+uid: 19c87cfa-0f1d-4fb4-9169-d0e8528cb24a
+info:
+  name: Dashboard Summaries
+  type: http
+  seq: 11
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v2/connections/dashboard-summary?status=active&page=0&page_size=1&workspace_id=18&company_type=Vendor&order=vendorName ASC&report_date=03/23/2023&filter[dpo_gteq]=0'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

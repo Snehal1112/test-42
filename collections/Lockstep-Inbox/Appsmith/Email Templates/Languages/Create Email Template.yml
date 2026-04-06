@@ -1,0 +1,23 @@
+uid: b02b5218-c980-4ad0-9c60-a6a769fa8b61
+info:
+  name: Create Email Template
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/appsmith/v1/email_templates/create_locale_text'
+  body:
+    type: json
+    data: |-
+      {
+        "subject": "<p>Rechnungen bald fällig</p>",
+        "content": "<p style=\"margin:0\">Hallo,</p><p style=\"margin:0\">Sie haben bald fällige Rechnungen. Bitte sehen Sie die Details unten./p><p style=\"margin:0\"><span class=\"editor-snippet\" data-lexical-snippet=\"true\" data-lexical-snippet-key=\"{{InvoiceTable}}\">Rechnungstabelle</span></p><p style=\"margin:0\">Wie immer können Sie auf die Rechnungsunterlagen über unser Kundenkonto-Portal mit dem untenstehenden Link zugreifen.</p><p style=\"margin:0\"><br></p><p style=\"margin:0\"><span class=\"editor-snippet\" data-lexical-snippet=\"true\" data-lexical-snippet-key=\"{{PortalLink}}\">Portal-Link</span></p><p style=\"margin:0\"><span class=\"editor-snippet\" data-lexical-snippet=\"true\" data-lexical-snippet-key=\"{{YourSignature}}\">Ihre Unterschrift</span></p><p style=\"margin:0\"></br></p><p style=\"margin:0\"><strong>Diese E-Mail wurde über das Sage im Auftrag von </strong><span class=\"editor-snippet\" data-lexical-snippet=\"true\" data-lexical-snippet-key=\"{{YourCompany}}\">Ihr Unternehmen</span><strong> zugestellt. Antworten auf diese E-Mail gehen direkt an </strong><span class=\"editor-snippet\" data-lexical-snippet=\"true\" data-lexical-snippet-key=\"{{YourEmailAddress}}\">Ihre E-Mail-Adresse</span><strong>.</strong></p>",
+        "locale_code": "de-DE",
+        "template_name": "Rechnungen bald fällig (Mehrere)",
+        "template_description": "Senden Sie eine Erinnerung, dass mehrere Rechnungen bald fällig sind.",
+        "email_template_id": 184
+      }
+  auth:
+    type: basic
+    username: '{{appsmith_username}}'
+    password: '{{appsmith_password}}'

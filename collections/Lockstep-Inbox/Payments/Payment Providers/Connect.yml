@@ -1,0 +1,23 @@
+uid: 8110a664-fb76-4141-8303-68e75926fcf1
+info:
+  name: Connect
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/payment_providers/connect'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  body:
+    type: json
+    data: |-
+      {
+        "servicer_id": "7537d358-25a0-4d3f-8cbf-6c8a06acbee9",
+        "landing_page_type": "login",
+        "success_redirect_uri": "https://example.com/everything-is-awesome",
+        "failure_redirect_uri": "https://example.com/oh-no"
+      }
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

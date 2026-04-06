@@ -1,0 +1,14 @@
+uid: ca2dd845-65a0-473c-a546-cc6dd296a096
+info:
+  name: Portal Sync Task
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v3/sync_task'
+  headers:
+  - name: X-Group-Key
+    value: '{{GroupKey}}'
+  auth:
+    type: bearer
+    token: '{{BearerToken}}'

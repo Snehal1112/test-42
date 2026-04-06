@@ -1,0 +1,18 @@
+uid: bce9aec9-b0b7-4ab6-ab9d-0ac30dbedb00
+info:
+  name: Update
+  type: http
+  seq: 5
+http:
+  method: PATCH
+  url: '{{BASE_URL}}/api/v2/attachments/status'
+  body:
+    type: json
+    data: |-
+      {
+          "attachment_ids": [9,8,11],
+          "status": "archived"
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

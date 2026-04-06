@@ -1,0 +1,21 @@
+uid: 597e56dc-de33-4b17-9486-d96b9f0de154
+info:
+  name: Add Gmail Channel
+  type: http
+  seq: 4
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v2/workspaces/5/channels'
+  body:
+    type: json
+    data: |-
+      {
+          "channel_type": "gmail",
+          "channel_action": "connect_to_workspace",
+          "config": {
+              "code": "4/0AdQt8qgvVAJFWGkkbUE1Z3fUtpOGLXCoN3XSRASWhfNidwgd8aOKN1ERkgIdbKUPz-1hSA"
+          }
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

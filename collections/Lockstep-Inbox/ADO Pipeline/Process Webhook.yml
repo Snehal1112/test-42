@@ -1,0 +1,18 @@
+uid: 883eb008-0386-489c-b06b-86abf772d2bc
+info:
+  name: Process Webhook
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/ado/v1/process_webhooks'
+  headers:
+  - name: delete_indices
+    value: '[''activity_streams'']'
+  body:
+    type: json
+    data: "{\n    \"lock_token\": \"90b4cb7b-cedc-42a4-a5e0-f268710d1e02\",\n    \"message_id\": \"8e3295b994e44851a45899e5c0fb2057\",\n    \"delivery_count\" : 3,\n    \"msg\": {\n        \"WebhookId\": \"cd78cccc-7617-4c6f-89ed-963a6e75be50\",\n        \"GroupKey\": \"f5ca6e53-8829-4dc9-a066-17c6ef6d34fc\",\n        \"Event\": \"SyncRequest.Update\", \n        \"Data\": [\n            {\n                \"Id\": \"f5ca6e53-8829-4dc9-a066-17c6ef6d34fc\", \n                \"ResourceUrl\": \"https://api.dev.lockstep.io/api/v1/Companies/f5ca6e53-8829-4dc9-a066-17c6ef6d34fc\", \n                \"Entity\": {\n                    \"CompanyId\": \"f5ca6e53-8829-4dc9-a066-17c6ef6d34fc\", \n                    \"CompanyName\": \"TestingPostman\"\n                }\n            }\n        ],\n        \"secret\" : \"YTQ0MjlhMDEtZTM4ZS00NDhkLTlmZGEtNzU0ZjhmMjMwYjRlOmYxMTg2MmQ4LTJjM2ItNDhhMS04YTFiLTNiNTkzZjUwZWFiNA==\"\n    }\n}"
+  auth:
+    type: basic
+    username: '{{task_username}}'
+    password: '{{task_password}}'

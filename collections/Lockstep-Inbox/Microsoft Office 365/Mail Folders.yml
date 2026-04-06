@@ -1,0 +1,11 @@
+uid: d1989721-e678-423f-83c4-f8d85abe137a
+info:
+  name: Mail Folders
+  type: http
+  seq: 2
+http:
+  method: GET
+  url: https://graph.microsoft.com/v1.0/Me/mailFolders/AAMkADQ1MTBkODlhLTA0MmQtNDUxYy1iZTAzLTJkZWFmNDMxNTVjZgAuAAAAAADKycDC7tM0TZPjnhDbm0Q1AQCxXy3gX3VgSahEXZojrlX8AAAAAmGgAAA=
+  auth:
+    type: bearer
+    token: ""

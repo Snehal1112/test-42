@@ -1,0 +1,11 @@
+uid: b1efc247-b6a1-45ca-a0df-8b758fa7a2c7
+info:
+  name: Payments
+  type: http
+  seq: 2
+http:
+  method: GET
+  url: '{{BASE_URL}}/api/v3/payments/?page_size=10'
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

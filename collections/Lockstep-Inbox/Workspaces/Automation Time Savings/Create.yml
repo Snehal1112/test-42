@@ -1,0 +1,22 @@
+uid: 787d3bc7-43b7-40fb-8613-7e70d2072cbc
+info:
+  name: Create
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: http://{{BASE_URL}}/api/v2/workspaces/1/automation_time_savings/
+  body:
+    type: json
+    data: |-
+      {
+          "from_time": 50,
+          "to_time": 150,
+          "resource_id": 63,
+          "automation_type": "email_templates",
+          "automation_sub_type": "remmitance_request",
+          "resource_type": "Activity::Email"
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

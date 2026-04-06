@@ -1,0 +1,32 @@
+uid: 965d91ea-dfc7-4c2c-bd67-0ce88160bfa5
+info:
+  name: Send Email
+  type: http
+  seq: 4
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/connections/send_email'
+  headers:
+  - name: x-group-key
+    value: '{{GROUP_KEY}}'
+  body:
+    type: json
+    data: |-
+      {
+        "to": [
+          {
+            "contact_id": "df6560b4-1e25-423b-9a18-b90100bfa46d",
+            "email_address": "manish.bs@sage.com",
+            "name": "new primary D1"
+          }
+        ],
+        "subject": "Welcome to your online statement from Test Check Name1!",
+        "content": "<body><p style=\"margin:0\">Hi,</p><p style=\"margin:0\"><br></p><p style=\"margin:0\">We are excited to offer you access to view your invoices online directly using your unique and secure link. In our customer account portal, you can view and download copies of open and closed invoices, export data, and more. To get started, click the link below.</p><p style=\"margin:0\"><br></p><p style=\"margin:0\">Account Balance: <span style=\"font-family: 'Arial',sans-serif;\">£ 4,262.36</span></p><p style=\"margin:0\"><br></p><p style=\"margin:0\">Balance Overdue: <span style=\"font-family: 'Arial',sans-serif;\">£ 4,262.36</span></p><p style=\"margin:0\"><br></p><p style=\"margin:0\"><span style=\"font-family: 'Arial',sans-serif;\"><a type=\"portal-link\" href=\"{{PortalLink}}\" style=\"border-radius: 0.5rem;\n                display: inline-block;\n                color: rgb(255, 255, 255);\n                font-family: 'Arial',sans-serif;\n                font-style: normal;\n                font-weight: 500;\n                font-size: 0.875rem;\n                line-height: 1.25rem;\n                text-align: center;\n                text-transform: none;\n                background: #007E45;\n                padding: 0.625rem 0.75rem;\n                margin-bottom: 0.325rem;\n                -webkit-box-align: center;\n                text-decoration: none;\">Open Portal</a>&nbsp;&nbsp;&nbsp;The link will expire in 30 days.</span></p><p style=\"margin:0\"><br></p><p style=\"margin:0\"><span style=\"font-family: 'Arial',sans-serif;\"></span></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><span style=\"font-family: Arial, sans-serif; white-space: pre-wrap;\">Thanks,</span></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><span style=\"font-family: Arial, sans-serif; white-space: pre-wrap;\">QA Engineer 2</span></p><p class=\"editor-paragraph\" style=\"margin: 0px;\"><img src=\"https://qa.network-eng.sage.com/inbox/api/attachments/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbmhLIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--512d426b2372a116cd43ec9d853eb27c11d37ac5/editedimg1744612310235.jpg\" alt=\"\" width=\"119\" height=\"70\"></p><p></p><p style=\"margin:0\"><br></p><p style=\"margin:0\"><br></p><p style=\"margin:0\"><strong>This email was delivered through Sage on behalf of </strong><span style=\"font-family: 'Arial',sans-serif;\">Test Check Name1</span><strong>. Replies to this email will go directly to </strong><span style=\"font-family: 'Arial',sans-serif;\">\n  <span style=\"font-family: 'Arial',sans-serif;\">{{YourEmailAddress}}</span></span><strong>.</strong></p><br>\n  <hr style=\"margin-block: 8px; border: 0.5px solid #c9c9c9\">\n  <p style=\"font-size: 10px; font-weight: 400; line-height: 1.5; color: #757575; font-family: 'Arial',sans-serif\">\n    This email and associated links are intended solely for the recipient. If received in error, please notify us and delete this message.\n  </p></body>",
+        "receiver": "customer",
+        "receiver_company_id": "d4e93631-e3e9-4368-af93-b23ac9b8ec35",
+        "attachment_ids": [],
+        "template_code": "INVITE_CUSTOMER"
+      }
+  auth:
+    type: bearer
+    token: '{{Bearer Token}}'

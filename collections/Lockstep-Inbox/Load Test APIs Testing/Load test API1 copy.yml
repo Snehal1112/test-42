@@ -1,0 +1,35 @@
+uid: e76a424d-fee5-401d-a310-ac3db8f1a92f
+info:
+  name: Load test API1 copy
+  type: http
+  seq: 46
+http:
+  method: POST
+  url: '{{BASE_URL}}/api/v3/onboard'
+  headers:
+  - name: Connection
+    value: close
+  - name: Accept
+    value: '*/*'
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: PostmanRuntime/7.44.1
+  - name: Authorization
+    value: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Im1vY2sta2V5LWlkIiwidHlwIjoiSldUIn0.eyJzdWIiOiJhdXRoMHwxNTIxYzk2N2M2MzE5MDUwOTMxZWZlZDgyOTc4YjFlZjdlZTgzMThkMmVhYWJmMjAiLCJyb2xlIjoiYWRtaW4iLCJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiZW1haWxfaWQiOiJTZWxsZXJfUFAxX25pZGhpQHNhZ2UubWFpbGluYXRvci5jb20iLCJncm91cF9rZXkiOiIzMGNiZWNkMy0zNDBiLTAwOTQtMzc1My0wOGJhYjA0NDNhMzgiLCJyZXZpZXdfaW52b2ljZWlkIjoiYjRkM2IxMjItNzcwNy00YWEzLTk1NjEtNjgyZTFjY2YzMWI5IiwiYWNjZXB0ZWRfaW52b2ljZWlkIjoiN2E3YTYxYTYtYmU1NS00NDkxLWIzOWEtNTkzMGY2ODAwMzFhIiwicmVmdXNlZF9pbnZvaWNlaWQiOiJhNjkyZjA0NS1jN2M5LTRmNDItYjdhZS0wMGE3NzE1NTEzYTciLCJuYmYiOjE3NzAwMTg0NDEsImV4cCI6MTc3MDEwNDg0MSwiaWF0IjoxNzcwMDE4NDQxLCJpc3MiOiJodHRwczovL2Rldi1ldS1sb2FkdGVzdC1tb2NrLWFwaS5henVyZXdlYnNpdGVzLm5ldC8iLCJhdWQiOiJzbmV0LWNsb3Vkb3BzL3BwL25ldHdvcmsvYXBpIn0.qrvE4-ohM2P32f0dwEFcIvmDH-GFccWPvW7hyMOrMQesZpAN-MHxIp3lFgbPOLd7J0qzSjKfxnVVhMuQJgbjWL-vvT_RAQAwhPSHYfoz11lru0iUfZiqrSw9--oyf6IMOfeFlSNuSGIgUnd1h8P6u9UHAurvXlcylmNUyIJ3quAro99MHzyNhcCodfk34sIW_v8-oRXFWMmkyUVgocdHfgTq6tYHCR1wOk1Kifn24rYckyU-R1ElW3U5yOPVYTB2w9iY1w6ceuHA_CY-JD252Wrc33lzn0Wp2C90NFGgvB6_lzVA94esBVC7qVlkZ0s5yl3P4_VHIovpRn-9Rp38-w
+  - name: x-group-key
+    value: 30cbecd3-340b-0094-3753-08bab0443a38
+  - name: Content-Length
+    value: '58'
+    disabled: true
+  - name: Host
+    value: preprod.network-eng.sage.com
+    disabled: true
+  body:
+    type: json
+    data: |-
+      {
+        "app_notification": {
+          "level": "dataset"
+        }
+      }

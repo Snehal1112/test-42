@@ -1,0 +1,15 @@
+uid: 8708d3be-6641-4164-a5ff-2a6d7fd12e65
+info:
+  name: Create Token
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: https://login.{{base_env}}.lockstep.io/login.{{base_env}}.lockstep.io/B2C_1A_PLATFORMROPC/oauth2/v2.0/token
+  body:
+    type: form-urlencoded
+    data: []
+runtime:
+  scripts:
+  - type: after-response
+    code: "let response = res.getBody()\nlet token = response.access_token \nconsole.log(token)\nbru.setEnvVar(\"Bearer Token\", token);"
