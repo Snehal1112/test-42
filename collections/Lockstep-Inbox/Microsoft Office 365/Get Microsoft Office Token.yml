@@ -1,8 +1,0 @@
-uid: c0b6c937-e195-4be7-bc86-e5bacb733909
-info:
-  name: Get Microsoft Office Token
-  type: http
-  seq: 10
-http:
-  method: GET
-  url: ''

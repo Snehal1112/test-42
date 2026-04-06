@@ -1,8 +1,0 @@
-uid: 026a296e-9ab6-46e2-8e75-ab56eaa01f55
-info:
-  name: Update Email Status
-  type: http
-  seq: 8
-http:
-  method: PATCH
-  url: '{{BASE_URL}}/api/ado/v1/activity_streams/update_email_status'

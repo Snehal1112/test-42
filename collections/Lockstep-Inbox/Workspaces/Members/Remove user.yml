@@ -1,8 +1,0 @@
-uid: 888a4977-4eca-4dd9-a18b-a861a06e12b2
-info:
-  name: Remove user
-  type: http
-  seq: 2
-http:
-  method: DELETE
-  url: '{{BASE_URL}}/api/v2/workspace/1/members/3fa85f64-5717-4562-b3fc-2c963f66afa6'

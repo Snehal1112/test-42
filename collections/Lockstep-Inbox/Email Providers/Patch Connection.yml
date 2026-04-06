@@ -1,8 +1,0 @@
-uid: 66f444bb-abb2-432e-8021-56abf1d4a9f6
-info:
-  name: Patch Connection
-  type: http
-  seq: 5
-http:
-  method: PATCH
-  url: '{{BASE_URL}}/api/v3/email_providers/:connection_id'

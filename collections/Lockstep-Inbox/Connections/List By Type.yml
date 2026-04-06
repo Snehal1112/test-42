@@ -1,8 +1,0 @@
-uid: 1327e2d2-56bc-47ea-9877-0bb99f58bd4c
-info:
-  name: List By Type
-  type: http
-  seq: 8
-http:
-  method: GET
-  url: '{{BASE_URL}}/api/v2/connections/list-by-type?page=0&page_size=10&workspace_id=219&company_type=Customer&company_type=Other&from_connection_id=:id'

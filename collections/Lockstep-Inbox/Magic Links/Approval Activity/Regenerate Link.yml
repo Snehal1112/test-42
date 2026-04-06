@@ -1,8 +1,0 @@
-uid: e073ecfc-27fc-4ddc-aee5-c841b28d4c48
-info:
-  name: Regenerate Link
-  type: http
-  seq: 5
-http:
-  method: POST
-  url: '{{BASE_URL}}/api/magic_links/{uuid}/regenerate'

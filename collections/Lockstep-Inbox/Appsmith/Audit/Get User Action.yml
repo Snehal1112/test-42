@@ -1,8 +1,0 @@
-uid: 717d0a02-56fe-4149-bd50-20267a1bc98a
-info:
-  name: Get User Action
-  type: http
-  seq: 2
-http:
-  method: GET
-  url: ''

@@ -1,8 +1,0 @@
-uid: 43dd9d24-13c0-45a7-8817-de71d068b693
-info:
-  name: Delete widget
-  type: http
-  seq: 4
-http:
-  method: DELETE
-  url: '{{BASE_URL}}/api/appsmith/v1/widgets/:id'

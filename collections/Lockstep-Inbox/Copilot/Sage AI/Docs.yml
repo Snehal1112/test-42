@@ -1,8 +1,0 @@
-uid: eb1d81a6-8b53-428c-b8b0-7f3799318f0d
-info:
-  name: Docs
-  type: http
-  seq: 1
-http:
-  method: GET
-  url: ''
