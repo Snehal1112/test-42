@@ -2,10 +2,9 @@ uid: c9b30bc3-a9a8-4272-ae3d-c5faccefa22e
 info:
   name: Update Display Profile
   type: http
-  seq: 1
 http:
   method: PATCH
-  url: '{{BASE_URL}}/api/v3/accounts/profile'
+  url: '{{BASE_URL}}/api/v3/accounts/profile/sdfsdfsdfsdf'
   headers:
   - name: X-Group-Key
     value: '{{GroupKey}}'
