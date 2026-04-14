@@ -1,0 +1,7 @@
+name: Folders
+uid: 4d91eef5-091f-4089-b66e-24c6eaef6175
+type: folder
+request:
+  variables:
+  - name: '222'
+    value: sdd

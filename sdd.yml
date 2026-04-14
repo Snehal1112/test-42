@@ -1,0 +1,11 @@
+uid: e05fd7ea-f4f1-4a3b-8dec-6499f60bb00d
+info:
+  name: sdd
+  type: http
+http:
+  method: GET
+  url: https://localhost:9098/sddd
+settings:
+  timeout: 30000.0
+  followRedirects: true
+  verifySsl: true

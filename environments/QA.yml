@@ -1,0 +1,4 @@
+name: QA
+variables:
+- name: basePath
+  value: /api/v1/webapp

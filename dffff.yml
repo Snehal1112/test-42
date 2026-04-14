@@ -1,0 +1,14 @@
+uid: c33fade1-717f-4331-8d7a-307343b1b062
+info:
+  name: dffff
+  type: http
+http:
+  method: GET
+  url: ''
+  headers:
+  - name: dff
+    value: dfff
+settings:
+  timeout: 30000.0
+  followRedirects: true
+  verifySsl: true

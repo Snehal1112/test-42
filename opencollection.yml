@@ -1,0 +1,20 @@
+opencollection: 1.0.0
+uid: 39ba4b93-54f3-4dbf-83ab-c8dd7d38bd6d
+info:
+  name: e4a-rest
+request:
+  auth:
+    type: oauth2
+    flow: authorization_code
+    accessTokenUrl: https://exchange4all.local/konnect/v1/token
+    authorizationUrl: https://exchange4all.local/signin/v1/identifier/_/authorize
+    callbackUrl: https://exchange4all.local/webapp/#oidc-callback
+    credentials:
+      clientId: webapp
+      clientSecret: ''
+    scope: openid profile email E4A.App.Default
+    settings:
+      verifySsl: false
+  variables:
+  - name: oidc-baseurl
+    value: https://exchange4all.local

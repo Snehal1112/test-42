@@ -1,0 +1,14 @@
+id: 01KP556PBMQP6MZG4EKEVFY494
+title: Hierarchy featureddd
+provider: sd
+consumer: sd
+project: sd
+version: '1.4'
+effectiveDate: 2026-04-12
+expiryDate: null
+documentPaths:
+- .rocket/contracts/attachments/01KP556PBMQP6MZG4EKEVFY494/webapp_myexchange.rocks.pdf
+enforcementMode: informational
+scope:
+  type: folder
+  rel_path: Hierarchy

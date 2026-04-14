@@ -1,0 +1,14 @@
+uid: 8bbd2935-1a32-430f-9d45-57bcebfac180
+info:
+  name: Hierarchy
+  type: http
+http:
+  method: GET
+  url: '{{oidc-baseurl}}{{basePath}}/hierarchy'
+  headers:
+  - name: sddd
+    value: '{{basePath}}'
+settings:
+  timeout: 30000.0
+  followRedirects: true
+  verifySsl: false
