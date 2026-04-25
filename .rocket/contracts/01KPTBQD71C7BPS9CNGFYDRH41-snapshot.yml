@@ -1,0 +1,536 @@
+contractId: 01KPTBQD71C7BPS9CNGFYDRH41
+entries:
+- requestPath: Ads Status Call.yml
+  method: GET
+  urlPattern: https://api-int.network-eng.sage.com/api/v1/status/sdddd
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T22:25:52.362147Z
+- requestPath: Get Status Self Service.yml
+  method: GET
+  urlPattern: https://int.network-eng.sage.com/portal/api/api/v3/status?user_type=customer&dataset_id=25a77b24-0092-6be0-92e6-34d0aae4e471&clear_cache=false
+  queryParamKeys: []
+  headerKeys:
+  - accept
+  - accept-language
+  - applicationname
+  - authorization
+  - cache-control
+  - Cookie
+  - dnt
+  - expires
+  - group-key
+  - newrelic
+  - pragma
+  - priority
+  - referer
+  - sec-ch-ua
+  - sec-ch-ua-mobile
+  - sec-ch-ua-platform
+  - sec-fetch-dest
+  - sec-fetch-mode
+  - sec-fetch-site
+  - traceparent
+  - tracestate
+  - user-agent
+  - x-group-key
+  - x-requested-with
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.696410Z
+- requestPath: Onboarding/2. User information.yml
+  method: GET
+  urlPattern: '{{sageIdURL}}/userinfo'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.696415Z
+- requestPath: Onboarding/3. ProvisionAccount returns 202.yml
+  method: POST
+  urlPattern: '{{connectedBridgeURL}}/provision/account'
+  queryParamKeys: []
+  headerKeys:
+  - Content-Type
+  - X-Idempotency-Key
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.696498Z
+- requestPath: Onboarding/4. Poll Provision Account.yml
+  method: POST
+  urlPattern: '{{connectedBridgeURL}}/provision/account'
+  queryParamKeys: []
+  headerKeys:
+  - Content-Type
+  - X-Idempotency-Key
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.696528Z
+- requestPath: Onboarding/5. Sage Network authorisation.yml
+  method: GET
+  urlPattern: http://
+  queryParamKeys: []
+  headerKeys:
+  - Content-Type
+  - Cookie
+  - Accept
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.696529Z
+- requestPath: Onboarding (Network as Default)/2. User information.yml
+  method: GET
+  urlPattern: '{{sageIdURL}}/userinfo'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.696531Z
+- requestPath: Onboarding (Network as Default)/3. ProvisionAccount returns 202.yml
+  method: POST
+  urlPattern: '{{connectedBridgeURL}}/provision/account'
+  queryParamKeys: []
+  headerKeys:
+  - Content-Type
+  - X-Idempotency-Key
+  bodyFieldKeys:
+  - Account
+  - Business
+  - Licence
+  - ProductLicences
+  - ProductSubscription
+  - User
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.696594Z
+- requestPath: Onboarding (Network as Default)/4. Poll Provision Account.yml
+  method: POST
+  urlPattern: '{{connectedBridgeURL}}/provision/account'
+  queryParamKeys: []
+  headerKeys:
+  - Content-Type
+  - X-Idempotency-Key
+  bodyFieldKeys:
+  - Account
+  - Business
+  - Licence
+  - ProductLicences
+  - ProductSubscription
+  - User
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.696646Z
+- requestPath: Onboarding (Network as Default)/5. Sage Network authorisation.yml
+  method: GET
+  urlPattern: http://
+  queryParamKeys: []
+  headerKeys:
+  - Content-Type
+  - Cookie
+  - Accept
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.696648Z
+- requestPath: Portal User Datasets.yml
+  method: GET
+  urlPattern: https://int.network-eng.sage.com/portal/api/api/v3/user_datasets
+  queryParamKeys: []
+  headerKeys:
+  - accept
+  - accept-language
+  - applicationname
+  - authorization
+  - cache-control
+  - Cookie
+  - dnt
+  - expires
+  - group-key
+  - newrelic
+  - pragma
+  - priority
+  - referer
+  - sec-ch-ua
+  - sec-ch-ua-mobile
+  - sec-ch-ua-platform
+  - sec-fetch-dest
+  - sec-fetch-mode
+  - sec-fetch-site
+  - traceparent
+  - tracestate
+  - user-agent
+  - x-group-key
+  - x-requested-with
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.696652Z
+- requestPath: Sage Connect/Status.yml
+  method: GET
+  urlPattern: https://dev.network-eng.sage.com/portal/api/api/v3/status?user_type=customer&clear_cache=true
+  queryParamKeys: []
+  headerKeys:
+  - accept
+  - accept-language
+  - applicationname
+  - authorization
+  - cache-control
+  - Cookie
+  - expires
+  - group-key
+  - newrelic
+  - pragma
+  - priority
+  - referer
+  - sec-ch-ua
+  - sec-ch-ua-mobile
+  - sec-ch-ua-platform
+  - sec-fetch-dest
+  - sec-fetch-mode
+  - sec-fetch-site
+  - traceparent
+  - tracestate
+  - user-agent
+  - x-requested-with
+  bodyFieldKeys: []
+  authType: bearer
+  capturedAt: 2026-04-22T10:28:13.696656Z
+- requestPath: Sync using JSON/1. Create sync task.yml
+  method: POST
+  urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}}/sync-tasks'
+  queryParamKeys: []
+  headerKeys:
+  - Content-Type
+  - Accept
+  - Idempotency-Key
+  bodyFieldKeys:
+  - Data
+  - Included
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697169Z
+- requestPath: Sync using JSON/2. Query sync task.yml
+  method: GET
+  urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks?filter=type eq ''toNetwork''&take=3&skip=0'
+  queryParamKeys: []
+  headerKeys:
+  - accept
+  - Authorization
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697172Z
+- requestPath: Sync using JSON/3. Query sync task with ID.yml
+  method: GET
+  urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks/{{connectorSyncTaskId}}?include=Details'
+  queryParamKeys: []
+  headerKeys:
+  - accept
+  - Authorization
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697175Z
+- requestPath: Sync using ZIP file/1. Create sync task.yml
+  method: POST
+  urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks'
+  queryParamKeys: []
+  headerKeys:
+  - Content-Type
+  - Accept
+  - Idempotency-Key
+  bodyFieldKeys:
+  - data
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697185Z
+- requestPath: Sync using ZIP file/2. Upload zip file.yml
+  method: PUT
+  urlPattern: '{{connectorBlobUploadUrl}}'
+  queryParamKeys: []
+  headerKeys:
+  - Accept
+  - x-ms-blob-type
+  - Content-Type
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697189Z
+- requestPath: Sync using ZIP file/3. Update sync task.yml
+  method: PATCH
+  urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks'
+  queryParamKeys: []
+  headerKeys:
+  - Content-Type
+  - Accept
+  - Idempotency-Key
+  bodyFieldKeys:
+  - data
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697215Z
+- requestPath: Sync using ZIP file/4. Query sync task.yml
+  method: GET
+  urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks/{{connectorSyncTaskId}}?include=Details'
+  queryParamKeys: []
+  headerKeys:
+  - accept
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697218Z
+- requestPath: Sync using ZIP file/Abc.yml
+  method: GET
+  urlPattern: https://qa.network-eng.sage.com/inbox/api/v3/network_users?page=1&page_items=25&direct_users_only=false
+  queryParamKeys: []
+  headerKeys:
+  - accept
+  - accept-language
+  - app-code
+  - applicationname
+  - authorization
+  - cache-control
+  - Cookie
+  - expires
+  - group-key
+  - newrelic
+  - pragma
+  - priority
+  - referer
+  - sec-ch-ua
+  - sec-ch-ua-mobile
+  - sec-ch-ua-platform
+  - sec-fetch-dest
+  - sec-fetch-mode
+  - sec-fetch-site
+  - traceparent
+  - tracestate
+  - user-agent
+  - x-group-key
+  - x-requested-with
+  - x-sxp-authorization
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-23T18:25:23.966527Z
+- requestPath: Sync using ZIP file/Get Dataset by Id.yml
+  method: GET
+  urlPattern: https://api-int.network-eng.sage.com/datasets/:datasetId
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697226Z
+- requestPath: Sync using ZIP file/Get Datasets.yml
+  method: GET
+  urlPattern: '{{nasUrl}}/datasets'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys:
+  - sd
+  authType: none
+  capturedAt: 2026-04-23T14:10:45.445683Z
+- requestPath: Test-ts.yml
+  method: GET
+  urlPattern: '{{T1}}/api/v1//user/:name'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697235Z
+- requestPath: Testing/Credit allocations/credit-allocations--id.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/credit-allocations/:id'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697239Z
+- requestPath: Testing/Credit allocations/credit-allocations.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/credit-allocations'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697244Z
+- requestPath: Testing/Credits/credits--id.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/credits/:id'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697248Z
+- requestPath: Testing/Credits/credits.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/credits'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697252Z
+- requestPath: Testing/Invoice lines/invoices--id-lines--lineId.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/invoices/:id/lines/:lineId'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697256Z
+- requestPath: Testing/Invoice lines/invoices--id-lines.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/invoices/:id/lines'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697261Z
+- requestPath: Testing/Invoices/invoices--id.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/invoices/:id'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697266Z
+- requestPath: Testing/Invoices/invoices.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/invoices'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697270Z
+- requestPath: Testing/Payment allocations/payment-allocations--id.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/payment-allocations'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697275Z
+- requestPath: Testing/Payment allocations/payment-allocations.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/payment-allocations'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697281Z
+- requestPath: Testing/Payments/payments--id.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/payments/:id'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697286Z
+- requestPath: Testing/Payments/payments.yml
+  method: GET
+  urlPattern: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/payments'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697291Z
+- requestPath: Validation/VALIDATION Auth m2m.yml
+  method: POST
+  urlPattern: '{{sageIdURL}}/oauth/token'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697298Z
+- requestPath: Validation/VALIDATION GET Users (NAS).yml
+  method: GET
+  urlPattern: '{{nasUrl}}/users/{{provisionAccountResponseUserId}}'
+  queryParamKeys: []
+  headerKeys:
+  - Authorization
+  - X-Idempotency-Key
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697303Z
+- requestPath: Validation/VALIDATION GET account (NAS).yml
+  method: GET
+  urlPattern: '{{nasUrl}}/accounts/{{provisionAccountResponseAccountId}}'
+  queryParamKeys: []
+  headerKeys:
+  - Authorization
+  - X-Idempotency-Key
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697310Z
+- requestPath: Validation/VALIDATION GET dataset (NAS).yml
+  method: GET
+  urlPattern: '{{nasUrl}}/datasets/{{networkProductInstancesTenantId}}'
+  queryParamKeys: []
+  headerKeys:
+  - Authorization
+  - X-Idempotency-Key
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697316Z
+- requestPath: Validation/VALIDATION accounts  (Organisation service).yml
+  method: GET
+  urlPattern: '{{organisationServiceURL}}/accounts/{{provisionAccountResponseAccountId}}'
+  queryParamKeys: []
+  headerKeys:
+  - Authorization
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697322Z
+- requestPath: Validation/VALIDATION businesses (Organisation service).yml
+  method: GET
+  urlPattern: '{{organisationServiceURL}}/businesses/{{provisionAccountResponseBusinessId}}'
+  queryParamKeys: []
+  headerKeys:
+  - Impotency-key
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697329Z
+- requestPath: Validation/VALIDATION product instances  (Organisation service).yml
+  method: GET
+  urlPattern: '{{organisationServiceURL}}/accounts/{{provisionAccountResponseAccountId}}/product-instances'
+  queryParamKeys: []
+  headerKeys:
+  - Authorization
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697336Z
+- requestPath: Validation/VALIDATION userMangement Manual Step in browser.yml
+  method: OPTIONS
+  urlPattern: https://app.sandbox.sbc.sage.com/settings/user-management/users?tid={{networkProductInstancesTenantId}}
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys:
+  - BusinessId
+  - OwnerHint
+  - RoleIds
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697349Z
+- requestPath: onboard.yml
+  method: POST
+  urlPattern: https://int.network-eng.sage.com/inbox/api/v3/onboard
+  queryParamKeys: []
+  headerKeys:
+  - accept
+  - accept-language
+  - app-code
+  - applicationname
+  - authorization
+  - cache-control
+  - content-type
+  - Cookie
+  - dnt
+  - expires
+  - group-key
+  - newrelic
+  - origin
+  - pragma
+  - priority
+  - referer
+  - sec-ch-ua
+  - sec-ch-ua-mobile
+  - sec-ch-ua-platform
+  - sec-fetch-dest
+  - sec-fetch-mode
+  - sec-fetch-site
+  - traceparent
+  - tracestate
+  - user-agent
+  - x-group-key
+  - x-requested-with
+  bodyFieldKeys: []
+  authType: none
+  capturedAt: 2026-04-22T10:28:13.697358Z

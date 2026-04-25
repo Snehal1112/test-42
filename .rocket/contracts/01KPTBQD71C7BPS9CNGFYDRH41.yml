@@ -1,0 +1,13 @@
+id: 01KPTBQD71C7BPS9CNGFYDRH41
+title: SXP-usermanager
+provider: SXP team
+consumer: Connect
+project: Connect
+version: V0.11.1
+effectiveDate: 2026-04-22
+expiryDate: null
+documentPaths:
+- .rocket/contracts/attachments/01KPTBQD71C7BPS9CNGFYDRH41/CRN10469524527.pdf
+enforcementMode: informational
+scope:
+  type: collection

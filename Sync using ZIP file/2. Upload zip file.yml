@@ -1,0 +1,16 @@
+uid: d626c489-28b2-45ca-8022-7d8f608a1248
+info:
+  name: 2. Upload zip file
+  type: http
+  seq: 2
+http:
+  method: PUT
+  url: '{{connectorBlobUploadUrl}}'
+  headers:
+  - name: Accept
+    value: application/vnd.api+json
+  - name: x-ms-blob-type
+    value: BlockBlob
+  - name: Content-Type
+    value: application/vnd.api+json
+    disabled: true

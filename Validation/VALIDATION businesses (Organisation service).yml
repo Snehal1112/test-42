@@ -1,0 +1,19 @@
+uid: 63809e2a-766f-4940-bd14-45ee7d54f5df
+info:
+  name: VALIDATION businesses (Organisation service)
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{organisationServiceURL}}/businesses/{{provisionAccountResponseBusinessId}}'
+  headers:
+  - name: Impotency-key
+    value: '{{$guid}}'
+    disabled: true
+runtime:
+  scripts:
+  - type: after-response
+    code: |-
+      test("OK", function () {
+          expect(res.getStatus()).to.equal(200);
+      });

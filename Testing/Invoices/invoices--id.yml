@@ -1,0 +1,8 @@
+uid: 90d45fd2-a5b1-4d1c-b390-cfedc5772da1
+info:
+  name: invoices/:id
+  type: http
+  seq: 2
+http:
+  method: GET
+  url: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/invoices/:id'
