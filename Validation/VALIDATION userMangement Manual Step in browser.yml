@@ -1,0 +1,11 @@
+uid: ca12286d-7819-4922-8019-e42d1f818ab9
+info:
+  name: VALIDATION userMangement Manual Step in browser
+  type: http
+  seq: 4
+http:
+  method: OPTIONS
+  url: https://app.sandbox.sbc.sage.com/settings/user-management/users?tid={{networkProductInstancesTenantId}}
+  body:
+    type: json
+    data: '{"BusinessId":"{{provisionAccountResponseBusinessId}}","RoleIds":["db5ff0b3-0dc9-4888-814d-a45899a62249"],"OwnerHint":"{{provisionAccountEmail}}"}'

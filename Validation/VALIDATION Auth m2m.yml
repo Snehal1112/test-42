@@ -1,0 +1,18 @@
+uid: 056ec122-0ecb-414d-8212-9ab28b850b67
+info:
+  name: VALIDATION Auth m2m
+  type: http
+  seq: 5
+http:
+  method: POST
+  url: '{{sageIdURL}}/oauth/token'
+  body:
+    type: form-urlencoded
+    data: []
+runtime:
+  scripts:
+  - type: after-response
+    code: |-
+      let jsonData = res.getBody();
+      var accessToken = jsonData.access_token;
+      bru.setEnvVar("m2mjwt", accessToken);

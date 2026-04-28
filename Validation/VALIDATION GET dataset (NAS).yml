@@ -1,0 +1,14 @@
+uid: 2d00102d-4d27-4e65-9fe1-9d87a739f7e3
+info:
+  name: VALIDATION GET dataset (NAS)
+  type: http
+  seq: 6
+http:
+  method: GET
+  url: '{{nasUrl}}/datasets/{{networkProductInstancesTenantId}}'
+  headers:
+  - name: Authorization
+    value: Bearer {{m2mjwt}}
+  - name: X-Idempotency-Key
+    value: 5842fd72-14ce-48e6-b1e9-9d2c531eb341
+    disabled: true
