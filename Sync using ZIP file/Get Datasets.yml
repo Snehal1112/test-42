@@ -5,3 +5,13 @@ info:
 http:
   method: GET
   url: '{{nasUrl}}/datasets'
+  body:
+    type: json
+    data: |-
+      {
+        "sd":"Sd"
+      }
+settings:
+  timeout: 30000.0
+  followRedirects: true
+  verifySsl: true

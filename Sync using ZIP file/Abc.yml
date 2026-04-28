@@ -2,7 +2,6 @@ uid: 03446e3f-51eb-4b8d-913b-cc61a5cd248c
 info:
   name: Abc
   type: http
-  seq: 7
 http:
   method: GET
   url: https://qa.network-eng.sage.com/inbox/api/v3/network_users?page=1&page_items=25&direct_users_only=false
@@ -57,3 +56,7 @@ http:
     value: XMLHttpRequest
   - name: x-sxp-authorization
     value: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpRTEFFQjdGRkFIcmlRNFFoMTJRSyJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8YjEwNjRlYzFhNDg3YzcyOWI3YTk5OTc1MjZmZjdlM2ZlY2I4OGRmNmYxM2VkYmU2IiwiYXVkIjpbIlNCQ0RTL2dsb2JhbCIsImh0dHBzOi8vc2FnZS1jaWQtc2hhZG93LnNhZ2VpZG5vbnByb2QuYXV0aDBhcHAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTc3MDIxMzQyNywiZXhwIjoxNzcwMjQyMjI3LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIHVzZXI6ZnVsbCIsImF6cCI6ImY3Um5rTzhWYUhaYXBxYmpGNU5pZGNJODgwYzlJdnVDIn0.ty4Q_LxXzvmzzdHvHXWUI2TQICGAg98L5u0XMerLMD_uqY_g3xnX7Y2KTr09E9QGB9SBV1xqbU9YB_Ak9jMFqYpRgRTZkCoNNjXPEAqZbWXTkqLKSLgxFCiMAzYvHsb_rD4q8SFfmtUAWBv3paQI7k__6ByK0fbFoBm-aPNEAhlFQ742EgdcQ3qe6B4TNiH1zECp1PHyXwzLDLWQ9V4ca5IbFbQmXMFBVER9Iq-IDPSnlRqrxNekS30jHk_weWfpLCa_aP8DfB8usLfdQ7N7C5Ed_An3Sq5PhBP6BPCvhpuLIfhYY_kX-LvAYxdW_xTpDmZ72BaEINzhmm-NnfueNA
+settings:
+  timeout: 30000.0
+  followRedirects: true
+  verifySsl: true

@@ -1,7 +1,0 @@
-uid: 53ab0f80-19bc-4cd0-8155-521cd1ba7133
-info:
-  name: sdd
-  type: http
-http:
-  method: GET
-  url: ''

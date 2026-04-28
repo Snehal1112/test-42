@@ -6,93 +6,15 @@ entries:
   changeType: changed
   oldValue: https://api-int.network-eng.sage.com/api/v1/status
   newValue: https://api-int.network-eng.sage.com/api/v1/status/sdddd
-- timestamp: 2026-04-26T06:43:02.460910Z
+- timestamp: 2026-04-22T20:12:59.782884Z
   requestPath: Sync using ZIP file/Get Datasets.yml
-  field: auth_type
-  changeType: changed
-  oldValue: none
-  newValue: bearer
-- timestamp: 2026-04-26T06:46:51.212017Z
-  requestPath: Sync using ZIP file/Get Datasets.yml
-  field: auth_type
-  changeType: changed
-  oldValue: bearer
-  newValue: none
-- timestamp: 2026-04-26T08:15:26.710830Z
+  field: body_field.sd
+  changeType: added
+  oldValue: null
+  newValue: sd
+- timestamp: 2026-04-23T13:53:18.507725Z
   requestPath: Sync using ZIP file/Get Datasets.yml
   field: url_pattern
   changeType: changed
   oldValue: https://api-qa.network-eng.sage.com/datasets
-  newValue: /datasets
-- timestamp: 2026-04-26T08:17:14.944459Z
-  requestPath: Sync using ZIP file/Get Datasets.yml
-  field: url_pattern
-  changeType: changed
-  oldValue: /datasets
-  newValue: '{{nasUrl}}/'
-- timestamp: 2026-04-26T08:17:25.878635Z
-  requestPath: Sync using ZIP file/Get Datasets.yml
-  field: url_pattern
-  changeType: changed
-  oldValue: '{{nasUrl}}/'
-  newValue: '{{nasUrl}}/datasets'
-- timestamp: 2026-04-26T19:12:49.969072Z
-  requestPath: Sync using ZIP file/Get Datasets.yml
-  field: url_pattern
-  changeType: changed
-  oldValue: '{{nasUrl}}/datasets'
-  newValue: '{{nasUrl}}/datasets?=&='
-- timestamp: 2026-04-26T19:44:23.369875Z
-  requestPath: Sync using ZIP file/Get Datasets.yml
-  field: url_pattern
-  changeType: changed
-  oldValue: '{{nasUrl}}/datasets?=&='
-  newValue: '{{nasUrl}}/datasets'
-- timestamp: 2026-04-27T06:35:31.668512Z
-  requestPath: Sync using ZIP file/Get Datasets.yml
-  field: url_pattern
-  changeType: changed
-  oldValue: '{{nasUrl}}/datasets'
-  newValue: '{{nasUrl}}/datasets?=&='
-- timestamp: 2026-04-27T06:40:17.118369Z
-  requestPath: Sync using ZIP file/Get Datasets.yml
-  field: url_pattern
-  changeType: changed
-  oldValue: '{{nasUrl}}/datasets?=&='
-  newValue: '{{nasUrl}}/datasets:id'
-- timestamp: 2026-04-27T06:40:33.670189Z
-  requestPath: Sync using ZIP file/Get Datasets.yml
-  field: url_pattern
-  changeType: changed
-  oldValue: '{{nasUrl}}/datasets:id'
-  newValue: '{{nasUrl}}/datasets/:id'
-- timestamp: 2026-04-27T06:40:53.103704Z
-  requestPath: Sync using ZIP file/Get Datasets.yml
-  field: url_pattern
-  changeType: changed
-  oldValue: '{{nasUrl}}/datasets/:id'
-  newValue: '{{nasUrl}}/datasets'
-- timestamp: 2026-04-27T08:52:44.113268Z
-  requestPath: Sync using ZIP file/Get Datasets.yml
-  field: url_pattern
-  changeType: changed
-  oldValue: '{{nasUrl}}/datasets'
-  newValue: '{{nasUrl}}/datasets/{{nas'
-- timestamp: 2026-04-27T08:59:49.704531Z
-  requestPath: Sync using ZIP file/Get Datasets.yml
-  field: url_pattern
-  changeType: changed
-  oldValue: '{{nasUrl}}/datasets/{{nas'
-  newValue: '{{nasUrl}}/datasets/{{n'
-- timestamp: 2026-04-27T09:15:56.492602Z
-  requestPath: Sync using ZIP file/Get Datasets.yml
-  field: url_pattern
-  changeType: changed
-  oldValue: '{{nasUrl}}/datasets/{{n'
-  newValue: '{{nasUrl}}/datasets/{{nas'
-- timestamp: 2026-04-27T09:16:04.159095Z
-  requestPath: Sync using ZIP file/Get Datasets.yml
-  field: url_pattern
-  changeType: changed
-  oldValue: '{{nasUrl}}/datasets/{{nas'
   newValue: '{{nasUrl}}/datasets'

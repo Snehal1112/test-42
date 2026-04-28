@@ -5,6 +5,7 @@ entries:
   urlPattern: '{{nasUrl}}/datasets'
   queryParamKeys: []
   headerKeys: []
-  bodyFieldKeys: []
+  bodyFieldKeys:
+  - sd
   authType: none
-  capturedAt: 2026-04-27T13:20:25.860692Z
+  capturedAt: 2026-04-23T14:10:45.445683Z

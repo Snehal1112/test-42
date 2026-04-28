@@ -7,7 +7,7 @@ entries:
   headerKeys: []
   bodyFieldKeys: []
   authType: none
-  capturedAt: 2026-04-22T10:28:57.676520Z
+  capturedAt: 2026-04-22T22:25:52.362147Z
 - requestPath: Get Status Self Service.yml
   method: GET
   urlPattern: https://int.network-eng.sage.com/portal/api/api/v3/status?user_type=customer&dataset_id=25a77b24-0092-6be0-92e6-34d0aae4e471&clear_cache=false
@@ -301,7 +301,7 @@ entries:
   - x-sxp-authorization
   bodyFieldKeys: []
   authType: none
-  capturedAt: 2026-04-22T10:28:13.697223Z
+  capturedAt: 2026-04-23T18:25:23.966527Z
 - requestPath: Sync using ZIP file/Get Dataset by Id.yml
   method: GET
   urlPattern: https://api-int.network-eng.sage.com/datasets/:datasetId
@@ -315,9 +315,10 @@ entries:
   urlPattern: '{{nasUrl}}/datasets'
   queryParamKeys: []
   headerKeys: []
-  bodyFieldKeys: []
+  bodyFieldKeys:
+  - sd
   authType: none
-  capturedAt: 2026-04-27T13:20:25.860692Z
+  capturedAt: 2026-04-23T14:10:45.445683Z
 - requestPath: Test-ts.yml
   method: GET
   urlPattern: '{{T1}}/api/v1//user/:name'
@@ -533,29 +534,3 @@ entries:
   bodyFieldKeys: []
   authType: none
   capturedAt: 2026-04-22T10:28:13.697358Z
-- requestPath: Sync using JSON/3. Query sync task with ID copy
-  method: GET
-  urlPattern: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks/{{connectorSyncTaskId}}?include=Details'
-  queryParamKeys: []
-  headerKeys:
-  - accept
-  - Authorization
-  bodyFieldKeys: []
-  authType: none
-  capturedAt: 2026-04-27T06:27:07.905686Z
-- requestPath: Sync using JSON/New Folder/sdd
-  method: GET
-  urlPattern: ''
-  queryParamKeys: []
-  headerKeys: []
-  bodyFieldKeys: []
-  authType: none
-  capturedAt: 2026-04-27T06:29:30.129493Z
-- requestPath: Sync using JSON/sdddd/sdd.yml
-  method: GET
-  urlPattern: ''
-  queryParamKeys: []
-  headerKeys: []
-  bodyFieldKeys: []
-  authType: none
-  capturedAt: 2026-04-27T06:54:35.026333Z
