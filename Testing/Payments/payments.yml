@@ -1,0 +1,8 @@
+uid: 9e1f585e-093b-4f6d-9254-202f1c3184a4
+info:
+  name: payments
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/payments'

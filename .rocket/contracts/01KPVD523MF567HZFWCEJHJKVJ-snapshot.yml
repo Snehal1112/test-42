@@ -1,0 +1,11 @@
+contractId: 01KPVD523MF567HZFWCEJHJKVJ
+entries:
+- requestPath: Sync using ZIP file/Get Datasets.yml
+  method: GET
+  urlPattern: '{{nasUrl}}/datasets'
+  queryParamKeys: []
+  headerKeys: []
+  bodyFieldKeys:
+  - sd
+  authType: none
+  capturedAt: 2026-04-23T14:10:45.445683Z
