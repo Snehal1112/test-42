@@ -1,8 +1,0 @@
-uid: f460a0a5-6f75-4d1f-ae49-5eb768ea3d82
-info:
-  name: invoices
-  type: http
-  seq: 1
-http:
-  method: GET
-  url: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/invoices'

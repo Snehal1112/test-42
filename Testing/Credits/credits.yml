@@ -1,8 +1,0 @@
-uid: cb44bdaa-42e8-45c1-b266-647c6f9deb30
-info:
-  name: credits
-  type: http
-  seq: 1
-http:
-  method: GET
-  url: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/credits'

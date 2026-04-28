@@ -1,8 +1,0 @@
-uid: b3e3933c-cdc2-4055-b8d2-0e6490b4db8f
-info:
-  name: payment-allocations
-  type: http
-  seq: 1
-http:
-  method: GET
-  url: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/payment-allocations'
